@@ -1,0 +1,42 @@
+{
+  "name": "limiro-brasil-whatsapp-agent",
+  "version": "1.0.0",
+  "description": "Agente inteligente de WhatsApp para a Limiro Brasil com Baileys e Google Gemini",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test:chat": "tsx src/simulator.ts"
+  },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "gemini",
+    "ai",
+    "limiro-brasil"
+  ],
+  "author": "Limiro Brasil",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@hapi/boom": "^10.0.1",
+    "@supabase/supabase-js": "^2.112.4",
+    "@whiskeysockets/baileys": "6.7.24",
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "overrides": {
+    "libsignal": "6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

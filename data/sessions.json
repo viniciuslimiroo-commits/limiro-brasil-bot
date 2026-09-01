@@ -1,0 +1,24 @@
+{
+  "201443227259095@lid": {
+    "jid": "201443227259095@lid",
+    "phone": "201443227259095",
+    "status": "AI_ATTENDANT",
+    "createdAt": 1788252870875,
+    "lastInteraction": 1788257921736,
+    "history": [],
+    "leadData": {
+      "updatedAt": "2026-09-01T08:54:30.875Z"
+    }
+  },
+  "5511999998888@s.whatsapp.net": {
+    "jid": "5511999998888@s.whatsapp.net",
+    "phone": "5511999998888",
+    "status": "INITIAL_MENU",
+    "createdAt": 1788255758105,
+    "lastInteraction": 1788256383358,
+    "history": [],
+    "leadData": {
+      "updatedAt": "2026-09-01T09:42:38.105Z"
+    }
+  }
+}
