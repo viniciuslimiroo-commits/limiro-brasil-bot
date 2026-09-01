@@ -14,16 +14,30 @@ export async function handleIncomingMessage(sock: WASocket, message: WAMessage):
     return;
   }
 
+  // Desembrulha mensagens aninhadas (mensagens temporárias / ephemeral, viewOnce, etc.)
+  let msgContent: any = message.message;
+  if (msgContent?.ephemeralMessage?.message) {
+    msgContent = msgContent.ephemeralMessage.message;
+  }
+  if (msgContent?.viewOnceMessage?.message) {
+    msgContent = msgContent.viewOnceMessage.message;
+  }
+  if (msgContent?.viewOnceMessageV2?.message) {
+    msgContent = msgContent.viewOnceMessageV2.message;
+  }
+  if (msgContent?.documentWithCaptionMessage?.message) {
+    msgContent = msgContent.documentWithCaptionMessage.message;
+  }
+
   // Extrai o texto ou o clique de botão da mensagem
-  const msgContent = message.message;
   let selectedButtonId =
-    msgContent.buttonsResponseMessage?.selectedButtonId ||
-    msgContent.templateButtonReplyMessage?.selectedId ||
-    msgContent.listResponseMessage?.singleSelectReply?.selectedRowId ||
+    msgContent?.buttonsResponseMessage?.selectedButtonId ||
+    msgContent?.templateButtonReplyMessage?.selectedId ||
+    msgContent?.listResponseMessage?.singleSelectReply?.selectedRowId ||
     '';
 
   // Trata botões interativos modernos (nativeFlowResponseMessage e interactiveResponseMessage)
-  if (msgContent.interactiveResponseMessage) {
+  if (msgContent?.interactiveResponseMessage) {
     try {
       if (msgContent.interactiveResponseMessage.nativeFlowResponseMessage?.paramsJson) {
         const parsed = JSON.parse(msgContent.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson);
@@ -37,107 +51,114 @@ export async function handleIncomingMessage(sock: WASocket, message: WAMessage):
 
   const rawText =
     selectedButtonId ||
-    msgContent.conversation ||
-    msgContent.extendedTextMessage?.text ||
-    msgContent.buttonsResponseMessage?.selectedDisplayText ||
-    msgContent.listResponseMessage?.title ||
-    msgContent.listResponseMessage?.description ||
+    msgContent?.conversation ||
+    msgContent?.extendedTextMessage?.text ||
+    msgContent?.imageMessage?.caption ||
+    msgContent?.videoMessage?.caption ||
+    msgContent?.documentMessage?.caption ||
+    msgContent?.buttonsResponseMessage?.selectedDisplayText ||
+    msgContent?.listResponseMessage?.title ||
+    msgContent?.listResponseMessage?.description ||
     '';
 
   const cleanText = rawText.trim();
   const lowerText = cleanText.toLowerCase();
 
-  // --- TRATAMENTO DE MENSAGENS ENVIADAS POR VOCÊ (PROSPECÇÃO ATIVA / RESPOSTA MANUAL) ---
+  const session = storage.getSession(jid);
+
+  // --- IGNORAR MENSAGENS ENVIADAS PELO PRÓPRIO BOT / CONTA (fromMe) ---
   if (message.key.fromMe) {
-    // Comandos de controle que você pode enviar direto no chat com o cliente
-    if (lowerText === `${config.adminPrefix}ia`) {
-      storage.setSessionStatus(jid, 'AI_ATTENDANT');
-      console.log(`🤖 [${jid}] Você ativou o modo IA para este contato.`);
-      await sendAiWelcome(sock, jid);
-      return;
-    }
-
-    if (lowerText === `${config.adminPrefix}humano`) {
-      storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
-      console.log(`👤 [${jid}] Você forçou o modo humano para este contato.`);
-      return;
-    }
-
-    if (lowerText === `${config.adminPrefix}reset` || lowerText === `${config.adminPrefix}menu`) {
+    // Permite apenas comandos de administração iniciados com '!' se digitados no próprio aparelho
+    if (lowerText === `${config.adminPrefix}reset` || lowerText === '!reset' || lowerText === `${config.adminPrefix}menu` || lowerText === '!menu') {
       storage.resetSession(jid);
-      console.log(`🔄 [${jid}] Sessão resetada para menu inicial.`);
+      console.log(`🔄 [${session.phone}] Você resetou a sessão via comando administrativo.`);
       await sendWelcomeMenu(sock, jid);
       return;
     }
-
-    // Se você enviou uma mensagem normal (prospecção/conversa manual),
-    // define a conversa como ATENDIMENTO HUMANO para a IA não se intrometer
-    const session = storage.getSession(jid);
-    if (session.status !== 'HUMAN_ATTENDANT') {
-      storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
-      console.log(`👤 [${session.phone}] Mensagem enviada por você. IA pausada automaticamente para prospecção ativa / conversa manual.`);
+    if (lowerText === `${config.adminPrefix}ia` || lowerText === '!ia') {
+      storage.setSessionStatus(jid, 'AI_ATTENDANT');
+      console.log(`🤖 [${session.phone}] Você ativou o modo IA via comando administrativo.`);
+      await sendAiWelcome(sock, jid);
+      return;
     }
+    if (lowerText === `${config.adminPrefix}humano` || lowerText === '!humano') {
+      storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
+      console.log(`👤 [${session.phone}] Você pausou a IA para atendimento humano.`);
+      return;
+    }
+
+    // Ignora todas as outras mensagens enviadas pela própria conta para não entrar em loop consigo mesma
     return;
   }
 
-  const session = storage.getSession(jid);
+  console.log(`📩 [${session.phone}] Mensagem do Cliente: "${cleanText}" (Status: ${session.status})`);
 
-  console.log(`📩 [${session.phone}] Mensagem / Ação: "${cleanText}" (Status: ${session.status})`);
-
-  // --- COMANDOS ADMINISTRATIVOS / ATALHOS ---
-  if (lowerText === `${config.adminPrefix}reset` || lowerText === `${config.adminPrefix}menu` || lowerText === 'menu principal') {
+  // --- 1. COMANDOS GLOBAIS DE RESET E MENU ---
+  if (
+    lowerText === `${config.adminPrefix}reset` ||
+    lowerText === '!reset' ||
+    lowerText === `${config.adminPrefix}menu` ||
+    lowerText === '!menu' ||
+    lowerText === 'reset' ||
+    lowerText === 'menu' ||
+    lowerText === 'menu principal'
+  ) {
     storage.resetSession(jid);
+    console.log(`🔄 [${session.phone}] Sessão resetada para menu inicial.`);
     await sendWelcomeMenu(sock, jid);
     return;
   }
 
-  if (lowerText === `${config.adminPrefix}ia`) {
+  if (lowerText === `${config.adminPrefix}ia` || lowerText === '!ia') {
     storage.setSessionStatus(jid, 'AI_ATTENDANT');
-    await sendTextWithTyping(sock, jid, '🤖 Modo de Atendimento com IA reativado para esta conversa.');
+    console.log(`🤖 [${session.phone}] Modo IA ativado.`);
+    await sendAiWelcome(sock, jid);
     return;
   }
 
-  if (lowerText === `${config.adminPrefix}humano`) {
+  if (lowerText === `${config.adminPrefix}humano` || lowerText === '!humano') {
     storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
+    console.log(`👤 [${session.phone}] Modo Atendimento Humano ativado.`);
     await sendHumanHandoff(sock, jid);
     return;
   }
 
-  // --- MÁQUINA DE ESTADOS DO ATENDIMENTO ---
+  // --- 2. VERIFICAÇÃO DE ESCOLHA DE OPÇÕES DO MENU (1 ou 2) ---
+  const isOptionOne =
+    selectedButtonId === 'btn_atendimento_ia' ||
+    lowerText === '1' ||
+    lowerText === '1️⃣' ||
+    lowerText === 'opcao 1' ||
+    lowerText === 'opção 1' ||
+    lowerText === 'ia';
 
-  // 1. ESTADO: MENU INICIAL
+  const isOptionTwo =
+    selectedButtonId === 'btn_falar_atendente' ||
+    lowerText === '2' ||
+    lowerText === '2️⃣' ||
+    lowerText === 'opcao 2' ||
+    lowerText === 'opção 2' ||
+    lowerText === 'falar com atendente' ||
+    lowerText === 'falar com humano' ||
+    lowerText === 'atendente humano';
+
+  if (isOptionOne) {
+    storage.setSessionStatus(jid, 'AI_ATTENDANT');
+    console.log(`🤖 [${session.phone}] Cliente escolheu Opção 1 (Atendimento com IA).`);
+    await sendAiWelcome(sock, jid);
+    return;
+  }
+
+  if (isOptionTwo) {
+    storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
+    console.log(`👤 [${session.phone}] Cliente escolheu Opção 2 (Atendente Humano).`);
+    await sendHumanHandoff(sock, jid);
+    return;
+  }
+
+  // --- 3. ESTADO: MENU INICIAL ---
   if (session.status === 'INITIAL_MENU') {
-    // Opção 1: Clique no botão ou resposta de IA
-    if (
-      selectedButtonId === 'btn_atendimento_ia' ||
-      lowerText === '1' ||
-      lowerText === '1️⃣' ||
-      lowerText.includes('atendimento com ia') ||
-      lowerText === 'ia' ||
-      lowerText === 'robô' ||
-      lowerText === 'robo'
-    ) {
-      storage.setSessionStatus(jid, 'AI_ATTENDANT');
-      await sendAiWelcome(sock, jid);
-      return;
-    }
-
-    // Opção 2: Clique no botão ou resposta de Atendente Humano
-    if (
-      selectedButtonId === 'btn_falar_atendente' ||
-      lowerText === '2' ||
-      lowerText === '2️⃣' ||
-      lowerText.includes('falar com atendente') ||
-      lowerText.includes('atendente') ||
-      lowerText.includes('humano') ||
-      lowerText.includes('pessoa')
-    ) {
-      storage.setSessionStatus(jid, 'HUMAN_ATTENDANT');
-      await sendHumanHandoff(sock, jid);
-      return;
-    }
-
-    // Caso seja a primeira mensagem e não tenha clicado, envia o menu com botões
+    // Se enviou qualquer outra mensagem inicial (ex: "Olá", "Boa tarde"), envia o menu
     await sendWelcomeMenu(sock, jid);
     return;
   }

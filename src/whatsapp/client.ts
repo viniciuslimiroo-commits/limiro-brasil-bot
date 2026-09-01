@@ -359,13 +359,14 @@ export async function startWhatsAppClient(): Promise<WASocket> {
 
   // Listener para mensagens recebidas
   sock.ev.on('messages.upsert', async (m) => {
-    if (m.type === 'notify') {
-      for (const msg of m.messages) {
-        try {
-          await handleIncomingMessage(sock, msg);
-        } catch (error) {
-          console.error('Erro ao processar mensagem recebida:', error);
-        }
+    for (const msg of m.messages) {
+      // Ignora mensagens de broadcast de status
+      if (msg.key.remoteJid === 'status@broadcast') continue;
+
+      try {
+        await handleIncomingMessage(sock, msg);
+      } catch (error) {
+        console.error('❌ Erro ao processar mensagem recebida:', error);
       }
     }
   });
