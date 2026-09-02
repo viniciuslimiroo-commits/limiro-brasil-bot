@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -189,8 +191,8 @@ Gere apenas o texto final da mensagem:`;
 }
 
 /**
- * Atendimento Receptivo da Limiro Brasil (Inbound - Quando alguém chama de fora)
- * Permite ao cliente escolher entre Atendimento com IA (mais rápido) ou Humano
+ * Atendimento Receptivo Dinâmico e Consultivo da Limiro Brasil (Google Gemini)
+ * Conduz conversa humana, simpática, descobre gargalos e qualifica profundamente o lead
  */
 async function handleInboundLimiroCustomer({ history, incomingText, phone, sendAdminAlert }) {
   const lower = incomingText.toLowerCase().trim();
@@ -203,8 +205,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
 
   // Etapa 2: Escolha do Modo
   if (history.inboundStage === 'CHOOSING_ATTENDANT') {
-    const isOptionOne = lower === '1' || lower.includes('ia') || lower.includes('inteligente') || lower.includes('robo') || lower.includes('robô') || lower.includes('opcao 1') || lower.includes('opção 1');
-    const isOptionTwo = lower === '2' || lower.includes('humano') || lower.includes('atendente') || lower.includes('pessoa') || lower.includes('consultor') || lower.includes('opcao 2') || lower.includes('opção 2');
+    const isOptionTwo = lower === '2' || lower.includes('humano') || lower.includes('atendente') || lower.includes('pessoa') || lower.includes('consultor');
 
     if (isOptionTwo) {
       history.inboundStage = 'HUMAN_HANDOFF';
@@ -219,37 +220,109 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
       return "Perfeito! Já transferi sua conversa para nossa equipe humana. 🤝\n\nNosso consultor da *Limiro Brasil* foi notificado com prioridade e vai te responder aqui mesmo em instantes!";
     }
 
-    // Se escolheu Opção 1 (IA) ou qualquer outra resposta inicial
-    history.inboundStage = 'ASKING_NAME_AND_NICHE';
+    history.inboundStage = 'QUALIFYING_WITH_AI';
     return "Excelente escolha! ⚡ Com o atendimento inteligente conseguimos adiantar todos os detalhes do seu projeto na hora.\n\nPara começarmos, *como posso te chamar e qual o ramo de atuação da sua empresa?*";
   }
 
-  // Etapa 3: Coletando Nome e Ramo (para quem escolheu IA)
-  if (history.inboundStage === 'ASKING_NAME_AND_NICHE') {
-    history.customerName = incomingText.replace(/^(meu nome é|sou o|sou a|me chamo|o meu é)\s*/i, '').trim();
-    history.inboundStage = 'ASKING_SERVICE';
-    return `Prazer, *${history.customerName}*! Qual dessas soluções você tem interesse hoje para o seu negócio?\n\n1️⃣ *Criação de Site Profissional no Google*\n2️⃣ *Aplicativo Próprio sob medida (iOS e Android)*\n3️⃣ *Atendente Virtual e Automação no WhatsApp*\n\n👉 *Digite 1, 2 ou 3:*`;
+  // Se o cliente pediu atendente humano no meio da conversa
+  if (lower.includes('falar com atendente') || lower.includes('falar com humano') || lower.includes('atendente humano') || lower.includes('pessoa real')) {
+    history.inboundStage = 'HUMAN_HANDOFF';
+    const adminPhone = getAdminPhone();
+    if (adminPhone && sendAdminAlert) {
+      const alertMsg = `🚨 *TRANSFERÊNCIA PARA HUMANO SOLICITADA!*\n\n` +
+        `👤 *Cliente:* ${history.customerName || 'Cliente'}\n` +
+        `📱 *WhatsApp:* https://wa.me/${phone}\n` +
+        `💬 *Última Mensagem:* "${incomingText}"\n` +
+        `📝 *Histórico:* ${history.messages.map(m => `\n- ${m.sender === 'customer' ? 'Cliente' : 'Limiro'}: ${m.text}`).join('')}\n\n` +
+        `👉 *Chame o cliente agora no WhatsApp!*`;
+      try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
+    }
+    return "Com certeza! Já transferi seu atendimento para nossa equipe humana. 🤝 Nosso consultor da Limiro Brasil já recebeu seu histórico e vai te responder aqui em instantes!";
   }
 
-  // Etapa 4: Escolheu o serviço ou quer proposta
-  history.inboundStage = 'FORWARDED_TO_SPECIALIST';
-  
-  const adminPhone = getAdminPhone();
-  if (adminPhone && sendAdminAlert) {
-    const alertMsg = `🌟 *NOVO LEAD QUALIFICADO VIA IA - LIMIRO BRASIL!*\n\n` +
-      `👤 *Cliente / Empresa:* ${history.customerName || 'Cliente'}\n` +
-      `📱 *WhatsApp:* https://wa.me/${phone}\n` +
-      `💬 *Interesse / Resposta:* "${incomingText}"\n` +
-      `📝 *Histórico:* ${history.messages.map(m => `\n- ${m.sender === 'customer' ? 'Cliente' : 'Limiro'}: ${m.text}`).join('')}\n\n` +
-      `👉 *Entre em contato para apresentar a proposta e fechar a venda!*`;
+  // Extrai nome próprio se ainda não tiver
+  if (!history.customerName) {
+    const raw = incomingText.replace(/^(meu nome é|sou o|sou a|me chamo|o meu é|aqui é a|aqui é o)\s*/i, '').trim();
+    const parts = raw.split(/[,;\-–—|]|\s+(?:trabalho com|da empresa|sou|sou da|tenho|tenho uma|atuo com|faço|vendo|comércio de|loja de)\s+/i);
+    const cleanFirstName = (parts[0] || raw).trim().split(/\s+/)[0];
+    if (cleanFirstName && cleanFirstName.length > 1 && !cleanFirstName.toLowerCase().includes('olá')) {
+      history.customerName = cleanFirstName;
+      history.customerNiche = raw;
+    }
+  }
 
+  // 🧠 Cérebro Generativo Consultivo do Inbound via Gemini
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (apiKey) {
     try {
-      await sendAdminAlert(adminPhone, alertMsg);
-      console.log(`[INBOUND] 🚨 Alerta de lead qualificado enviado para o admin (${adminPhone})!`);
-    } catch (e) {}
+      const prompt = `Você é o assistente comercial da Limiro Brasil no WhatsApp.
+Sua personalidade é SUPER SIMPÁTICA, EXTROVERTIDA E DIRETA AO PONTO.
+
+### REGRA DE OURO - MENSAGENS CURTAS:
+- RESPOSTAS ULTRA BREVES: Escreva no MÁXIMO 2 a 3 frases curtas (30 a 40 palavras no total).
+- PROIBIDO textões, parágrafos longos ou mensagens cansativas. Seja ágil como uma conversa real de WhatsApp!
+
+### TOM E OBJETIVO:
+- Seja simpático, animado e extrovertido (use emojis com moderação: "Show de bola, [Nome]! 😍", "Que demais!").
+- Faça APENAS 1 pergunta curtinha por vez para entender o negócio e a dor do cliente.
+- Descubra aos poucos: como funciona o atendimento dele hoje, qual o maior gargalo (tempo/faltas) e o que ele busca (Robô no WhatsApp, Site ou App).
+- NUNCA use o nome "Vinicius" (use "nosso especialista" ou "nossa equipe").
+- Quando ele pedir valor/preço, diga que é super acessível e que nosso especialista vai enviar a proposta sob medida aqui no zap.
+
+HISTÓRICO DA CONVERSA:
+${history.messages.map(m => `${m.sender === 'customer' ? 'Cliente' : 'Limiro Brasil'}: ${m.text}`).join('\n')}
+Cliente: "${incomingText}"
+
+Gere apenas a sua resposta CURTA e SIMPÁTICA (máximo 2-3 frases):`;
+
+      const candidateModels = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-flash-latest'];
+      let text = '';
+
+      for (const modelName of candidateModels) {
+        try {
+          const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: { maxOutputTokens: 80, temperature: 0.7 }
+            })
+          });
+
+          const data = await response.json();
+          text = data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim()?.replace(/^["']|["']$/g, '');
+          if (text) break;
+        } catch (_) {}
+      }
+
+      if (text) {
+        // Se a resposta do Gemini indicar finalização/proposta, avisa o admin
+        const isClosing = text.toLowerCase().includes('especialista') || text.toLowerCase().includes('proposta') || incomingText.toLowerCase().includes('quanto custa') || incomingText.toLowerCase().includes('valor');
+        if (isClosing) {
+          const adminPhone = getAdminPhone();
+          if (adminPhone && sendAdminAlert) {
+            const alertMsg = `🌟 *NOVO LEAD QUALIFICADO VIA IA - LIMIRO BRASIL!*\n\n` +
+              `👤 *Cliente:* ${history.customerName || 'Cliente'}\n` +
+              `🏢 *Nicho:* ${history.customerNiche || 'Geral'}\n` +
+              `📱 *WhatsApp:* https://wa.me/${phone}\n` +
+              `💬 *Última Mensagem:* "${incomingText}"\n` +
+              `📝 *Histórico:* ${history.messages.map(m => `\n- ${m.sender === 'customer' ? 'Cliente' : 'Limiro'}: ${m.text}`).join('')}\n\n` +
+              `👉 *Entre em contato para apresentar a proposta e fechar a venda!*`;
+            try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
+          }
+        }
+        return text;
+      }
+    } catch (err) {
+      console.error('[INBOUND GEMINI] Erro na geração:', err.message);
+    }
   }
 
-  return `Perfeito, ${history.customerName || ''}! Já anotei todas as informações com prioridade. 🚀\n\nNosso especialista já recebeu seu resumo completo e vai te chamar aqui mesmo em instantes com a proposta ideal sob medida para você!`;
+  // Fallback inteligente caso a API esteja sem chave
+  if (history.customerName) {
+    return `Que legal, *${history.customerName}*! Hoje você perde muito tempo atendendo e organizando as clientes manualmente no WhatsApp, ou você já tem algum site ou sistema próprio?`;
+  }
+  return "Perfeito! Me conta um pouquinho mais sobre como funciona o seu negócio hoje e qual o principal objetivo que você quer alcançar (mais clientes, automatizar o atendimento ou criar um site)?";
 }
 
 /**
