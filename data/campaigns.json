@@ -1,0 +1,2888 @@
+[
+  {
+    "id": "camp_1788323238661_t44kh",
+    "name": "Clínica odontológica em Senador Canedo",
+    "niche": "Clínica odontológica",
+    "city": "Senador Canedo, GO",
+    "status": "SCHEDULED",
+    "createdAt": "2026-09-02T04:27:18.661Z",
+    "scheduledAt": "2026-09-03T11:00:00.000Z",
+    "intervalSeconds": 60,
+    "strategy": "step1",
+    "leads": [
+      {
+        "id": "lead_1788323080459_0",
+        "name": "Dra. Camila Vianna | Plantão 24h | Dentista em Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992421099",
+        "whatsapp": "5562992421099",
+        "hasWhatsApp": true,
+        "website": "https://dracamilavianna.my.canva.site/",
+        "hasWebsite": true,
+        "address": "R. Vila Lobos, Qd 09 - Lt 13 - Jardim Canedo 1, Sen. Canedo - GO, 75250-192",
+        "rating": "5,0",
+        "reviewsCount": 5,
+        "mapsUrl": "https://www.google.com/maps/place/Dra.+Camila+Vianna+%7C+Plant%C3%A3o+24h+%7C+Dentista+em+Senador+Canedo/data=!4m7!3m6!1s0x935ee9ec3f65d14d:0xfae96988e70e0bf2!8m2!3d-16.6915504!4d-49.1104396!16s%2Fg%2F11z2tjwlnw!19sChIJTdFlP-zpXpMR8gsO54hp6fo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:40.459Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Dra. Camila Vianna | aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323083112_1",
+        "name": "Odonto Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230102222",
+        "whatsapp": "556230102222",
+        "hasWhatsApp": true,
+        "website": "https://www.odontocanedo.com.br/",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, n: 1621 - Conjunto. Jardim Sabiá, Sen. Canedo - GO, 75200-047",
+        "rating": "5,0",
+        "reviewsCount": 455,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Canedo/data=!4m7!3m6!1s0x935ee89cd34906df:0xcb91fcf485b6f409!8m2!3d-16.6986621!4d-49.1014014!16s%2Fg%2F11b6j7q_85!19sChIJ3wZJ05zoXpMRCfS2hfT8kcs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:43.112Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Canedo aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323085370_2",
+        "name": "OralPrev Senador Canedo | Clinica Odontológica",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "062991286618",
+        "whatsapp": "5562991286618",
+        "hasWhatsApp": true,
+        "website": "https://www.google.com/aclk?sa=L&ai=DChsSEwjyz4rRhs-WAxVyaUgAHTa7G4wYACICCAEQABoCY2U&co=1&ase=2&gclid=EAIaIQobChMI8s-K0YbPlgMVcmlIAB02uxuMEBIYASAAEgJoufD_BwE&cid=CAAS0gHkaOPlhKa4oM1kjn7kH9u0exiFKvDoQWiB1IVgt1DEY_9A1UJPHPhQX7EQu6H-Kja3zWELcc-1JDEB1ztjJTi96-Q9TSRPCfV0-pVjKFGYrGNJkGIzJSR-45zahpWkchiaI0t19vyY7Cvg2TBgVLXPnTD_1ndjHBX7WIchSEEpuPW1oZLP9-VJJ96YenjYD9lyLgdv01jq4qod5itKaZM23QGDq7BhS4B7vuxsYmDz_TphzeNME0mhSyv3m7_LitaHJaJFcnKVsMqnvmF3EU61I7s&cce=2&category=acrcp_v1_32&sig=AOD64_1tSTG4C43PaQYKbmyJZwhaxQg9YQ&adurl=&placesheetAdFix=1&rct=j&nis=5",
+        "hasWebsite": false,
+        "address": "Av. Dom Emanuel, 1021 - Setor Todos os Santos, Sen. Canedo - GO, 75250-970",
+        "rating": "5,0",
+        "reviewsCount": 286,
+        "mapsUrl": "https://www.google.com/maps/place/OralPrev+Senador+Canedo+%7C+Clinica+Odontol%C3%B3gica/data=!4m7!3m6!1s0x935ee991cb26d35d:0x958dbcec0be3706f!8m2!3d-16.7026399!4d-49.0979349!16s%2Fg%2F11ff0s5pnx!19sChIJXdMmy5HpXpMRb3DjC-y8jZU?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:45.370Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da OralPrev  | Clinica Odontológica aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323087230_3",
+        "name": "CROE Odontologia Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062982294646",
+        "whatsapp": "5562982294646",
+        "hasWhatsApp": true,
+        "website": "https://croeodontologia.com/croe-v3/",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, Qd 01 - Lt 33 - Conj. Sabia, Sen. Canedo - GO, 75250-047",
+        "rating": "4,9",
+        "reviewsCount": 243,
+        "mapsUrl": "https://www.google.com/maps/place/CROE+Odontologia+Senador+Canedo/data=!4m7!3m6!1s0x935ee89659287967:0x60679e953ebfd021!8m2!3d-16.6990955!4d-49.1010568!16s%2Fg%2F1ydkbd1pr!19sChIJZ3koWZboXpMRIdC_PpWeZ2A?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:47.230Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da CROE Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323089099_4",
+        "name": "Sorria Goiás - Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062999643921",
+        "whatsapp": "5562999643921",
+        "hasWhatsApp": true,
+        "website": "https://sorriagoias.com.br/clinicas/sorria-goias-senador-canedo/",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, Qd.02 - Lt.01 - Conj. Sabia, Sen. Canedo - GO, 75250-047",
+        "rating": "4,6",
+        "reviewsCount": 413,
+        "mapsUrl": "https://www.google.com/maps/place/Sorria+Goi%C3%A1s+-+Senador+Canedo/data=!4m7!3m6!1s0x935ee995f0bec8a3:0xfc1204da7dca5c65!8m2!3d-16.6996836!4d-49.1005356!16s%2Fg%2F11kd8x5xgs!19sChIJo8i-8JXpXpMRZVzKfdoEEvw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:49.099Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Sorria Goiás - aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323090970_5",
+        "name": "Sorridents Senador Canedo Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992675333",
+        "whatsapp": "5562992675333",
+        "hasWhatsApp": true,
+        "website": "https://www.google.com/aclk?sa=L&ai=DChsSEwigh_jThs-WAxW2TkgAHQMsBQQYACICCAEQABoCY2U&co=1&ase=2&gclid=EAIaIQobChMIoIf404bPlgMVtk5IAB0DLAUEEBIYASAAEgLenPD_BwE&cid=CAAS0gHkaF-0mUpsf4lPk93lcIYbsrQaZN0LzbLp5pb7wj1hDAFYregxpGqg4bKbDYE02-qnGrIDiefAKe_LyRqQELgclwtLQxpcnG_DibR1APpZDJyWfOnImcSojbGe7GvvNBXLmt_QtSIN6bf6EGvnulV9styasNNDHW9EWLN6moM29dmOfPkLG_O9ijXXCNEgYyEnJY76bdOH7rZ5nKe-_3LPkB5zLH4A6LyD4ELXRpjAw4eWcYD5pexRAtapSv6eQFys1-i2koWzgIVsGA-FwaXPHkw&cce=2&category=acrcp_v1_32&sig=AOD64_0MfIDqG_MjeCOIl1EELrQvdlBUNQ&adurl=&placesheetAdFix=1&rct=j&nis=5",
+        "hasWebsite": false,
+        "address": "Av. Dom Emanuel, 1267 - Quadra 37 Lote 13 - Setor Central 3, Sen. Canedo - GO, 75251-403",
+        "rating": "4,8",
+        "reviewsCount": 165,
+        "mapsUrl": "https://www.google.com/maps/place/Sorridents+Senador+Canedo+Odontologia/data=!4m7!3m6!1s0x935ef3c8b4ab1483:0x24f849307e6f4ee0!8m2!3d-16.7010604!4d-49.099244!16s%2Fg%2F11k0lrlnh9!19sChIJgxSrtMjzXpMR4E5vfjBJ-CQ?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:50.970Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Sorridents  Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323092974_6",
+        "name": "Sorriso Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981423514",
+        "whatsapp": "5562981423514",
+        "hasWhatsApp": true,
+        "website": "https://sorrisocanedo.com.br/",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, QD. 01 - LT 02/38 - Conjunto Habitacional Jd. Sabiá, Sen. Canedo - GO, 75250-047",
+        "rating": "4,9",
+        "reviewsCount": 120,
+        "mapsUrl": "https://www.google.com/maps/place/Sorriso+Canedo/data=!4m7!3m6!1s0x935ee8960a95e337:0x65859bb50c3f467b!8m2!3d-16.6994263!4d-49.1007472!16s%2Fg%2F11x6lsk_k_!19sChIJN-OVCpboXpMRe0Y_DLWbhWU?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:52.974Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Sorriso Canedo aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323094893_7",
+        "name": "OdontoCompany Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981457788",
+        "whatsapp": "5562981457788",
+        "hasWhatsApp": true,
+        "website": "https://odontocompanycanedo.com.br/",
+        "hasWebsite": true,
+        "address": "Av. Ademar de Barros, QD 6 LT 3 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-303",
+        "rating": "4,6",
+        "reviewsCount": 196,
+        "mapsUrl": "https://www.google.com/maps/place/OdontoCompany+Senador+Canedo/data=!4m7!3m6!1s0x935ee976cb95a4e7:0xaa1e8da29c61688a!8m2!3d-16.7054038!4d-49.0943548!16s%2Fg%2F11gxtfjmsn!19sChIJ56SVy3bpXpMRimhhnKKNHqo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:54.893Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da OdontoCompany aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323096858_8",
+        "name": "ORAL UNIC - Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062999063838",
+        "whatsapp": "5562999063838",
+        "hasWhatsApp": true,
+        "website": "https://www.oralunic.com.br/senador-canedo-go",
+        "hasWebsite": true,
+        "address": "R. Bariane Hortêncio - jardim canedo I, Sen. Canedo - GO, 75250-150",
+        "rating": "4,9",
+        "reviewsCount": 150,
+        "mapsUrl": "https://www.google.com/maps/place/ORAL+UNIC+-+Senador+Canedo/data=!4m7!3m6!1s0x935ee9b91bd64c43:0xed91cb878b5c20c8!8m2!3d-16.6979258!4d-49.1023117!16s%2Fg%2F11sytyw7yp!19sChIJQ0zWG7npXpMRyCBci4fLke0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:56.858Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da ORAL UNIC - aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323098829_9",
+        "name": "ISO Clínica Odontológica",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06234134345",
+        "whatsapp": "556234134345",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "GO-403, 64 - Conj. Uirapuru, Sen. Canedo - GO, 75250-000",
+        "rating": "4,5",
+        "reviewsCount": 45,
+        "mapsUrl": "https://www.google.com/maps/place/ISO+Cl%C3%ADnica+Odontol%C3%B3gica/data=!4m7!3m6!1s0x935ee91527bccdef:0x34a5cd712884911!8m2!3d-16.6976263!4d-49.1014909!16s%2Fg%2F11fk4f054x!19sChIJ7828JxXpXpMREUmIEtdcSgM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:24:58.829Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da ISO Clínica Odontológica aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323100825_10",
+        "name": "Aprimore Odontologia Especializada - Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062999766997",
+        "whatsapp": "5562999766997",
+        "hasWhatsApp": true,
+        "website": "https://aprimoreodonto.com.br/",
+        "hasWebsite": true,
+        "address": "Rua Milton Costa Qd 1 LT 9 Sala 2 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-420",
+        "rating": "5,0",
+        "reviewsCount": 83,
+        "mapsUrl": "https://www.google.com/maps/place/Aprimore+Odontologia+Especializada+-+Senador+Canedo/data=!4m7!3m6!1s0x935ee95253453515:0x264ba0d675f07df2!8m2!3d-16.7055026!4d-49.0947!16s%2Fg%2F11s39npm_n!19sChIJFTVFU1LpXpMR8n3wddagSyY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:00.825Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Aprimore Odontologia Especializada - aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323103413_11",
+        "name": "Odonto Calaça",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062996885328",
+        "whatsapp": "5562996885328",
+        "hasWhatsApp": true,
+        "website": "https://odontocalaca.com.br/",
+        "hasWebsite": true,
+        "address": "R. Ademar de Barros, QD 1-A LT. 04 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-411",
+        "rating": "5,0",
+        "reviewsCount": 173,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Cala%C3%A7a/data=!4m7!3m6!1s0x935ee92bba2c949f:0xe3486545dbd251e2!8m2!3d-16.704052!4d-49.0953891!16s%2Fg%2F11sz0gsrwf!19sChIJn5QsuivpXpMR4lHS20VlSOM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:03.413Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Calaça aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323105355_12",
+        "name": "OrthoDontic",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230108252",
+        "whatsapp": "556230108252",
+        "hasWhatsApp": true,
+        "website": "https://www.orthodonticbrasil.com.br/clinicas/clinica-odontologica-orthodontic-senador-canedo-488/",
+        "hasWebsite": true,
+        "address": "Av. Dr. José Carneiro, SN - Quadra 43 Lote 17 - Res. Jardim Canedo II, Sen. Canedo - GO, 75250-157",
+        "rating": "4,9",
+        "reviewsCount": 119,
+        "mapsUrl": "https://www.google.com/maps/place/OrthoDontic/data=!4m7!3m6!1s0x935ee92375a75f25:0xcca675f9dd546306!8m2!3d-16.6995719!4d-49.1033936!16s%2Fg%2F11y7693hbd!19sChIJJV-ndSPpXpMRBmNU3fl1psw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:05.355Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da OrthoDontic aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323107624_13",
+        "name": "Oral Prime Senador Canedo Odontologia Especializada",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981457770",
+        "whatsapp": "5562981457770",
+        "hasWhatsApp": true,
+        "website": "https://www.instagram.com/oralprimesenadorcanedo/",
+        "hasWebsite": true,
+        "address": "R. Bougainville, Qd. 01 - Lt. 16 - Conj. Habitacional Jardim Sabiá, Sen. Canedo - GO, 75250-050",
+        "rating": "5,0",
+        "reviewsCount": 23,
+        "mapsUrl": "https://www.google.com/maps/place/Oral+Prime+Senador+Canedo+Odontologia+Especializada/data=!4m7!3m6!1s0x935ee99c0c9c6ee7:0xa351a91040dab44c!8m2!3d-16.698757!4d-49.101897!16s%2Fg%2F11ybf84bhm!19sChIJ526cDJzpXpMRTLTaQBCpUaM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:07.624Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Oral Prime  Odontologia Especializada aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323109708_14",
+        "name": "Redeorto Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230101999",
+        "whatsapp": "556230101999",
+        "hasWhatsApp": true,
+        "website": "https://redeorto.com.br/unidades/senador-canedo",
+        "hasWebsite": true,
+        "address": "Av. Aroeira, quadra 43 - lote 10 - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-135",
+        "rating": "4,5",
+        "reviewsCount": 66,
+        "mapsUrl": "https://www.google.com/maps/place/Redeorto+Senador+Canedo/data=!4m7!3m6!1s0x935ee8bdcc8480e7:0xe55370c6303fe47e!8m2!3d-16.6990213!4d-49.1027178!16s%2Fg%2F11cn8tkvnk!19sChIJ54CEzL3oXpMRfuQ_MMZwU-U?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:09.708Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Redeorto aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323111634_15",
+        "name": "EPRON | Implantes Dentários | Facetas | Odontopediatria | Dentista em Senador Canedo - GO",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062996410480",
+        "whatsapp": "5562996410480",
+        "hasWhatsApp": true,
+        "website": "https://biolink.info/Epronodontologia",
+        "hasWebsite": true,
+        "address": "Rua Ademar de Barros, S/N Qd 02 Lt 29 Sala 05 Jardim Todos os Santos - Centro, Sen. Canedo - GO, 75261-405",
+        "rating": "4,7",
+        "reviewsCount": 29,
+        "mapsUrl": "https://www.google.com/maps/place/EPRON+%7C+Implantes+Dent%C3%A1rios+%7C+Facetas+%7C+Odontopediatria+%7C+Dentista+em+Senador+Canedo+-+GO/data=!4m7!3m6!1s0x935ee9455494acbd:0xfab17b656c303f22!8m2!3d-16.7048012!4d-49.0946608!16s%2Fg%2F11rbygqtft!19sChIJvayUVEXpXpMRIj8wbGV7sfo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:11.634Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da EPRON | Implantes Dentários aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323113656_16",
+        "name": "Instituto Guedes Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062994749011",
+        "whatsapp": "5562994749011",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dr. José Carneiro, Qd 37 - lt 15 - jardim Canedo, Sen. Canedo - GO, 75250-157",
+        "rating": "5,0",
+        "reviewsCount": 17,
+        "mapsUrl": "https://www.google.com/maps/place/Instituto+Guedes+Odontologia/data=!4m7!3m6!1s0x935ee9b0dbd34133:0x23132690425dd9c8!8m2!3d-16.6981037!4d-49.104817!16s%2Fg%2F11nhf8pt9x!19sChIJM0HT27DpXpMRyNldQpAmEyM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:13.656Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Instituto Guedes Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323115752_17",
+        "name": "SOS Centro Odontologico",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230103904",
+        "whatsapp": "556230103904",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "25conjunto sabiá ao lado da caixa econômica Federal - Av dom emanuel qd1lt - Conj. Uirapuru, Sen. Canedo - GO, 75250-000",
+        "rating": "4,3",
+        "reviewsCount": 12,
+        "mapsUrl": "https://www.google.com/maps/place/SOS+Centro+Odontologico/data=!4m7!3m6!1s0x935ee99cd27b2dcb:0x36844eb908a1ea7e!8m2!3d-16.6985345!4d-49.1015532!16s%2Fg%2F11gm_vqgp_!19sChIJyy170pzpXpMRfuqhCLlOhDY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:15.752Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da SOS Centro Odontologico aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323117618_18",
+        "name": "Clínica Dentária Pra Você - Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981779842",
+        "whatsapp": "5562981779842",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. 23 - Conj. Uirapuru, Sen. Canedo - GO, 75261-208",
+        "rating": "1,0",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Dent%C3%A1ria+Pra+Voc%C3%AA+-+Senador+Canedo/data=!4m7!3m6!1s0x935ee9007bca5a03:0x7ffd69e6a33fdb52!8m2!3d-16.6969731!4d-49.1018754!16s%2Fg%2F11xlz5gj_7!19sChIJA1rKewDpXpMRUts_o-Zp_X8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:17.618Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Clínica Dentária Pra Você - aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323119476_19",
+        "name": "Odonto Qualit",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992395986",
+        "whatsapp": "5562992395986",
+        "hasWhatsApp": true,
+        "website": "https://www.google.com/aclk?sa=L&ai=DChsSEwjolMThhs-WAxVCUUgAHTOmFAsYACICCAEQABoCY2U&co=1&ase=2&gclid=EAIaIQobChMI6JTE4YbPlgMVQlFIAB0zphQLEBIYASAAEgJM6PD_BwE&cid=CAAS0gHkaGaMScCe3jTdIE6UBpHMORsB1C5NB3pDBcJgUJengtTrsS4PRsOepoU4Qg2sUPLKRcD75de7FzdrWqNUFYkHFYBw365npfd8KVhFkCfq-dh50fJnlo0ilY_LeEK9F9u4PCG-jqXvHFvYWyvlL5WNCT9ha7K3vGpkoqU78xIv9r6WC1MUZ7oY540S4_ZuRmpaVoI7eHufXpREdGQkd7SJmgmhS7iLRPgpyUEIh_I5YmnLW15jjBL_0LFo1VHUexsXwLQnpZoewATuO4X819KcaiY&cce=2&category=acrcp_v1_32&sig=AOD64_21JaPlX34mENBm9o3_O8F8Mpw5GQ&adurl=&placesheetAdFix=1&rct=j&nis=5",
+        "hasWebsite": false,
+        "address": "R. 23, Qd.01 - Lt. 10B - Conj. Uirapuru, Sen. Canedo - GO, 75261-208",
+        "rating": "4,8",
+        "reviewsCount": 74,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Qualit/data=!4m7!3m6!1s0x935ee89581896093:0x488c7c5fa0fbe803!8m2!3d-16.6972202!4d-49.1017077!16s%2Fg%2F11dxs18yk7!19sChIJk2CJgZXoXpMRA-j7oF98jEg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:19.476Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Qualit aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323121419_20",
+        "name": "Imagem Odontologica 3D",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981014049",
+        "whatsapp": "5562981014049",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Bougainville, N° 219 - Qd. 03, Lt. 31 - Conjunto Jardim Sabiá, Sen. Canedo - GO, 75250-050",
+        "rating": "4,0",
+        "reviewsCount": 29,
+        "mapsUrl": "https://www.google.com/maps/place/Imagem+Odontologica+3D/data=!4m7!3m6!1s0x935ee8be1d54edf5:0xa7aeb6288519f6ab!8m2!3d-16.6990178!4d-49.1017939!16s%2Fg%2F11bwyps5z_!19sChIJ9e1UHb7oXpMRq_YZhSi2rqc?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:21.419Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Imagem Odontologica 3D aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323123727_21",
+        "name": "Instituto de Odontologia Especializada Mabella",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "06235122487",
+        "whatsapp": "556235122487",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Prof. Henrique Peclat, Qd. 23 - Lt. 02 - Vila Santa Rosa, Sen. Canedo - GO, 74660-370",
+        "rating": "3,8",
+        "reviewsCount": 71,
+        "mapsUrl": "https://www.google.com/maps/place/Instituto+de+Odontologia+Especializada+Mabella/data=!4m7!3m6!1s0x935ee9f77f280857:0x39577dfb48e7bc81!8m2!3d-16.7077705!4d-49.0937082!16s%2Fg%2F11l6v3j30t!19sChIJVwgof_fpXpMRgbznSPt9Vzk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:23.727Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Instituto de Odontologia Especializada Mabella aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323125984_22",
+        "name": "Clínica Amor Saúde Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06234130013",
+        "whatsapp": "556234130013",
+        "hasWhatsApp": true,
+        "website": "https://www.amorsaude.com.br/clinica/senadorcanedo-go/",
+        "hasWebsite": true,
+        "address": "R. Ademar de Barros, 582 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-405",
+        "rating": "3,2",
+        "reviewsCount": 72,
+        "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Amor+Sa%C3%BAde+Senador+Canedo/data=!4m7!3m6!1s0x935ee965f2d47acb:0x7ed0976044dea32a!8m2!3d-16.7041158!4d-49.0953923!16s%2Fg%2F11txg_1zvd!19sChIJy3rU8mXpXpMRKqPeRGCX0H4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:25.984Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Clínica Amor Saúde aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323128568_23",
+        "name": "Espaço Odontológico Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06235126169",
+        "whatsapp": "556235126169",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua Militina S. da Silva - Qd. 02, Lt. 01, Sl. 10 Morada Nova, Sen. Canedo - GO, 75261-104",
+        "rating": "4,7",
+        "reviewsCount": 13,
+        "mapsUrl": "https://www.google.com/maps/place/Espa%C3%A7o+Odontol%C3%B3gico+Canedo/data=!4m7!3m6!1s0x935ee97d7729dd7b:0xe678ae78f0091cf9!8m2!3d-16.6940196!4d-49.1033228!16s%2Fg%2F11h5ds51c3!19sChIJe90pd33pXpMR-RwJ8HiueOY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:28.568Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Espaço Odontológico Canedo aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323130914_24",
+        "name": "Sorria Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230104490",
+        "whatsapp": "556230104490",
+        "hasWhatsApp": true,
+        "website": "https://www.facebook.com/odontoclinicasorria/?ref=br_rs",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, 01 - Qd 06 Lt Sala 1 - Centro, Sen. Canedo - GO, 75251-425",
+        "rating": "2,7",
+        "reviewsCount": 7,
+        "mapsUrl": "https://www.google.com/maps/place/Sorria+Odontologia/data=!4m7!3m6!1s0x935ee89ba5e8c097:0x70d2d4b103d58989!8m2!3d-16.7083748!4d-49.0924595!16s%2Fg%2F11fxwnb453!19sChIJl8DopZvoXpMRiYnVA7HU0nA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:30.914Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Sorria Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323133027_25",
+        "name": "Clínica Rodrigues Lima Odontologia Integrada",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062984054526",
+        "whatsapp": "5562984054526",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. 2, quadra 4 lote 16 - Vila Bonsucesso, Sen. Canedo - GO, 75261-486",
+        "rating": "5,0",
+        "reviewsCount": 109,
+        "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Rodrigues+Lima+Odontologia+Integrada/data=!4m7!3m6!1s0x935ee7768069138b:0xabbe52143c3c5f32!8m2!3d-16.7122929!4d-49.0877956!16s%2Fg%2F11ghd_qrs7!19sChIJixNpgHbnXpMRMl88PBRSvqs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:33.027Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Clínica Rodrigues Lima Odontologia Integrada aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323135345_26",
+        "name": "Art-Plus Clínic",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062986340036",
+        "whatsapp": "5562986340036",
+        "hasWhatsApp": true,
+        "website": "https://api.whatsapp.com/send?phone=5562986340036&text=Gou+Odonto",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, QD 7 - LT 13 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-432",
+        "rating": "5,0",
+        "reviewsCount": 9,
+        "mapsUrl": "https://www.google.com/maps/place/Art-Plus+Cl%C3%ADnic/data=!4m7!3m6!1s0x935ee9d2068897a3:0xe3cc41ceedbbb2e8!8m2!3d-16.7069326!4d-49.0936669!16s%2Fg%2F11rx4c57gb!19sChIJo5eIBtLpXpMR6LK77c5BzOM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:35.345Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Art-Plus Clínic aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323137396_27",
+        "name": "Romera Odontologia e Estética",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062999101060",
+        "whatsapp": "5562999101060",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Benjamin Santos, quadra 02, Lote 11, sala 03 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-408",
+        "rating": "4,7",
+        "reviewsCount": 14,
+        "mapsUrl": "https://www.google.com/maps/place/Romera+Odontologia+e+Est%C3%A9tica/data=!4m7!3m6!1s0x935ee92777a3e1cf:0x8b68c9a5602952a3!8m2!3d-16.7033242!4d-49.0937593!16s%2Fg%2F11n4p1strd!19sChIJz-GjdyfpXpMRo1IpYKXJaIs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:37.396Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Romera Odontologia e Estética aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323139712_28",
+        "name": "Clínica Lumyna Centro Médico & Diagnóstico",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06233005579",
+        "whatsapp": "556233005579",
+        "hasWhatsApp": true,
+        "website": "https://lumynacmd.com.br/",
+        "hasWebsite": true,
+        "address": "R. Gov. Ary Ribeiro Valadão, QD 1L, LT 08, N. 103 - Jd Todos os Santos III, Sen. Canedo - GO, 75261-322",
+        "rating": "3,7",
+        "reviewsCount": 345,
+        "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Lumyna+Centro+M%C3%A9dico+%26+Diagn%C3%B3stico/data=!4m7!3m6!1s0x935ee9fc17ca2b9f:0x72954654525ef2fc!8m2!3d-16.6985113!4d-49.1000731!16s%2Fg%2F11td3vkxpv!19sChIJnyvKF_zpXpMR_PJeUlRGlXI?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:39.712Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Clínica Lumyna Centro Médico aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323142544_29",
+        "name": "Odonto Premium",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981932353",
+        "whatsapp": "5562981932353",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua Padre Francisco Peclad qd 2A LT 24 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-414",
+        "rating": "5,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Premium/data=!4m7!3m6!1s0x935ee9277effa30d:0xe29ae50168963cde!8m2!3d-16.7041372!4d-49.0947531!16s%2Fg%2F11s2xzr620!19sChIJDaP_fifpXpMR3jyWaAHlmuI?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:42.544Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Premium aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323144733_30",
+        "name": "Odonto Shopping",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062983224868",
+        "whatsapp": "5562983224868",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Progresso Q 2, 0 - Jardim Sabia, Sen. Canedo - GO, 75250-000",
+        "rating": "4,4",
+        "reviewsCount": 7,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Shopping/data=!4m7!3m6!1s0x935ee94c47634fa5:0x90744077efd47442!8m2!3d-16.6998153!4d-49.1005793!16s%2Fg%2F11gx_z70q9!19sChIJpU9jR0zpXpMRQnTU73dAdJA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:44.733Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Shopping aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323147317_31",
+        "name": "Crosc Clínica",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230103434",
+        "whatsapp": "556230103434",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Progresso - Conj. Sabia, Sen. Canedo - GO, 75250-000",
+        "rating": "3,2",
+        "reviewsCount": 5,
+        "mapsUrl": "https://www.google.com/maps/place/Crosc+Cl%C3%ADnica/data=!4m7!3m6!1s0x935ee8bdac38c7fd:0x5c84d5ee4da890c0!8m2!3d-16.7007757!4d-49.1008282!16s%2Fg%2F11d_8rhtf2!19sChIJ_cc4rL3oXpMRwJCoTe7VhFw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:47.317Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Crosc Clínica aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323149704_32",
+        "name": "Rs Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062982638359",
+        "whatsapp": "5562982638359",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Conj. Sabia, Sen. Canedo - GO, 75250-050",
+        "rating": "4,0",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Rs+Odontologia/data=!4m7!3m6!1s0x935ee9ed18ff78e1:0x2efd11d430936bb5!8m2!3d-16.7000528!4d-49.1009578!16s%2Fg%2F11qws446vj!19sChIJ4Xj_GO3pXpMRtWuTMNQR_S4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:49.704Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Rs Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323152023_33",
+        "name": "Instituto Sorrir Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06230101046",
+        "whatsapp": "556230101046",
+        "hasWhatsApp": true,
+        "website": "http://www.gruposorrir.com.br/",
+        "hasWebsite": true,
+        "address": "R. 23, Quadra 01 Lote R-6 - Uirapuru, Sen. Canedo - GO, 75250-000",
+        "rating": "4,2",
+        "reviewsCount": 5,
+        "mapsUrl": "https://www.google.com/maps/place/Instituto+Sorrir+Odontologia/data=!4m7!3m6!1s0x935ee89a94c2544b:0x64d944487d1ba9f!8m2!3d-16.6977679!4d-49.1013293!16s%2Fg%2F11c5blb5r1!19sChIJS1TClJroXpMRn7rRh0SUTQY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:52.023Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Instituto Sorrir Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323154391_34",
+        "name": "Drª Ana Flávia | Odontopediatra em Senador Canedo",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992665045",
+        "whatsapp": "5562992665045",
+        "hasWhatsApp": true,
+        "website": "https://odontopediatracanedo.com.br/",
+        "hasWebsite": true,
+        "address": "Av. Central, Qd 4 - Lt.02A - Conj. Uirapuru, Sen. Canedo - GO, 75261-232",
+        "rating": "5,0",
+        "reviewsCount": 24,
+        "mapsUrl": "https://www.google.com/maps/place/Dr%C2%AA+Ana+Fl%C3%A1via+%7C+Odontopediatra+em+Senador+Canedo/data=!4m7!3m6!1s0x935ee9bf6eea158d:0x12425a2eb42c1d75!8m2!3d-16.6957318!4d-49.1018104!16s%2Fg%2F11yjhlk4nm!19sChIJjRXqbr_pXpMRdR0stC5aQhI?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:54.391Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Drª Ana Flávia | Odontopediatra aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323156685_35",
+        "name": "NOSSA CLÍNICA",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992136083",
+        "whatsapp": "5562992136083",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Bariane Hortêncio, 117 - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-000",
+        "rating": "3,7",
+        "reviewsCount": 10,
+        "mapsUrl": "https://www.google.com/maps/place/NOSSA+CL%C3%8DNICA/data=!4m7!3m6!1s0x935ee8bfcc7e6c85:0x343c6f4e8d846614!8m2!3d-16.6973315!4d-49.1028547!16s%2Fg%2F11sy700mqw!19sChIJhWx-zL_oXpMRFGaEjU5vPDQ?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:56.685Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da NOSSA CLÍNICA aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323159035_36",
+        "name": "Odonto Kölln",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062992518058",
+        "whatsapp": "5562992518058",
+        "hasWhatsApp": true,
+        "website": "https://instagram.com/dra_evellynkolln?igshid=u54qv9uf9g6e",
+        "hasWebsite": true,
+        "address": "avenida Dr Jose carneiro esquina com a, R. Monteiro Lobato - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-157",
+        "rating": "5,0",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+K%C3%B6lln/data=!4m7!3m6!1s0x935ee92782b3f147:0xb580bd5073c9fb7d!8m2!3d-16.6993211!4d-49.1039591!16s%2Fg%2F11qnrrtbqn!19sChIJR_GzgifpXpMRffvJc1C9gLU?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:25:59.035Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Kölln aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323161935_37",
+        "name": "Vida Animal Veterinária",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06235122885",
+        "whatsapp": "556235122885",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dom Emanuel, nº 1.511 - Qd 01, Lt 37 - Conj. Sabia, Sen. Canedo - GO, 75250-047",
+        "rating": "4,5",
+        "reviewsCount": 309,
+        "mapsUrl": "https://www.google.com/maps/place/Vida+Animal+Veterin%C3%A1ria/data=!4m7!3m6!1s0x935ee8960aa0614d:0xef4ee35e18036c1d!8m2!3d-16.6993679!4d-49.1008331!16s%2Fg%2F11c6cx1r96!19sChIJTWGgCpboXpMRHWwDGF7jTu8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:01.935Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Vida Animal Veterinária aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323164601_38",
+        "name": "RPM Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "06235125762",
+        "whatsapp": "556235125762",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dom Emanuel, Quadra 1F, Lote 1, Sala 4 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-432",
+        "rating": "3,9",
+        "reviewsCount": 25,
+        "mapsUrl": "https://www.google.com/maps/place/RPM+Odontologia/data=!4m7!3m6!1s0x935ee89cd34906df:0xb348002dc020b205!8m2!3d-16.7006596!4d-49.099308!16s%2Fg%2F11b6hq4gjf!19sChIJ3wZJ05zoXpMRBbIgwC0ASLM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:04.601Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da RPM Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323167200_39",
+        "name": "Clínica Veterinária São Francisco",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062991709080",
+        "whatsapp": "5562991709080",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Prof. Henrique Peclat - Vila Santa Rosa, Sen. Canedo - GO, 75251-444",
+        "rating": "4,4",
+        "reviewsCount": 216,
+        "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Veterin%C3%A1ria+S%C3%A3o+Francisco/data=!4m7!3m6!1s0x935ee9741f5ef1bd:0x327744582fd6ea12!8m2!3d-16.7073011!4d-49.0939157!16s%2Fg%2F11rkj7k0bc!19sChIJvfFeH3TpXpMREurWL1hEdzI?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:07.200Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Clínica Veterinária São Francisco aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323169811_40",
+        "name": "IFC - Instituto Fernando Corrêa",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062996503110",
+        "whatsapp": "5562996503110",
+        "hasWhatsApp": true,
+        "website": "https://doutorfernandocorrea.com.br/",
+        "hasWebsite": true,
+        "address": "R. 23 - Conj. Uirapuru, Sen. Canedo - GO, 75261-208",
+        "rating": "5,0",
+        "reviewsCount": 14,
+        "mapsUrl": "https://www.google.com/maps/place/IFC+-+Instituto+Fernando+Corr%C3%AAa/data=!4m7!3m6!1s0x935ee96e24791a81:0xaf34a90c7bd3431f!8m2!3d-16.6975926!4d-49.1014676!16s%2Fg%2F11y3p92d59!19sChIJgRp5JG7pXpMRH0PTewypNK8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:09.811Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da IFC - Instituto Fernando Corrêa aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323172050_41",
+        "name": "Dra Bárbara Cecília Harmonização Facial",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "062999122500",
+        "whatsapp": "5562999122500",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Ademar de Barros, quadra 1b, lote 06 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-405",
+        "rating": "5,0",
+        "reviewsCount": 12,
+        "mapsUrl": "https://www.google.com/maps/place/Dra+B%C3%A1rbara+Cec%C3%ADlia+Harmoniza%C3%A7%C3%A3o+Facial/data=!4m7!3m6!1s0x935ee93f34192d4d:0xd493e9656b0963cf!8m2!3d-16.7035349!4d-49.096405!16s%2Fg%2F11wnv11l7h!19sChIJTS0ZND_pXpMRz2MJa2Xpk9Q?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:12.050Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Dra Bárbara Cecília Harmonização Facial aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323174626_42",
+        "name": "Atalaia prótese dentária",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dr. José Carneiro, Qd 22 - Lt 36 N.759 - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-157",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Atalaia+pr%C3%B3tese+dent%C3%A1ria/data=!4m7!3m6!1s0x935ee9000cc25d9f:0xfc78a0a6488cfeb1!8m2!3d-16.6949825!4d-49.1081681!16s%2Fg%2F11mzr8y1w9!19sChIJn13CDADpXpMRsf6MSKagePw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:14.626Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Atalaia prótese dentária aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323179230_43",
+        "name": "Odontomaciel",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "062994505473",
+        "whatsapp": "5562994505473",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Unnamed Road - Conj. Uirapuru, Sen. Canedo - GO, 75250-000",
+        "rating": "4,2",
+        "reviewsCount": 5,
+        "mapsUrl": "https://www.google.com/maps/place/Odontomaciel/data=!4m7!3m6!1s0x935ee98816c8141f:0x8898cea35713ae61!8m2!3d-16.6952123!4d-49.1010172!16s%2Fg%2F11ghshhd8d!19sChIJHxTIFojpXpMRYa4TV6POmIg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:19.230Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odontomaciel aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323183377_44",
+        "name": "Centro de Castração Municipal",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "06232753000",
+        "whatsapp": "556232753000",
+        "hasWhatsApp": true,
+        "website": "https://bemestaranimal.senadorcanedo.go.gov.br/",
+        "hasWebsite": true,
+        "address": "R. Dr. Anuar Auad - Conj. Uirapuru, Sen. Canedo - GO",
+        "rating": "4,7",
+        "reviewsCount": 48,
+        "mapsUrl": "https://www.google.com/maps/place/Centro+de+Castra%C3%A7%C3%A3o+Municipal/data=!4m7!3m6!1s0x935ee992c5e3ba29:0xaaa7b330819c3c5e!8m2!3d-16.6910444!4d-49.094893!16s%2Fg%2F11w2jnkbt5!19sChIJKbrjxZLpXpMRXjycgTCzp6o?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:23.377Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Centro de Castração Municipal aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323185873_45",
+        "name": "Odontologia Avançada",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "062981370178",
+        "whatsapp": "5562981370178",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Prof. Henrique Peclat, Qd23 Lt04 - Centro, Sen. Canedo - GO, 75250-000",
+        "rating": "4,2",
+        "reviewsCount": 10,
+        "mapsUrl": "https://www.google.com/maps/place/Odontologia+Avan%C3%A7ada/data=!4m7!3m6!1s0x935ee89c9d59799f:0xeb27319217d4be52!8m2!3d-16.7071891!4d-49.093835!16s%2Fg%2F11h4s932ny!19sChIJn3lZnZzoXpMRUr7UF5IxJ-s?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:25.873Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odontologia Avançada aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323187998_46",
+        "name": "Odonto Visual Dr. Samir",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Milton Costa - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-417",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Odonto+Visual+Dr.+Samir/data=!4m7!3m6!1s0x935ee96dcdbb4eeb:0xa6d5862d2da07a65!8m2!3d-16.7025251!4d-49.0916702!16s%2Fg%2F11t40w69v1!19sChIJ6067zW3pXpMRZXqgLS2G1aY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:27.998Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Odonto Visual Dr. Samir aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323190375_47",
+        "name": "Kairós Odontologia",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "062994606581",
+        "whatsapp": "5562994606581",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dr. José Carneiro, Qd 22 - Lt 36 N.759 - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-157",
+        "rating": "5,0",
+        "reviewsCount": 2,
+        "mapsUrl": "https://www.google.com/maps/place/Kair%C3%B3s+Odontologia/data=!4m7!3m6!1s0x935ee98e74733b2f:0xcd98ae0adf5c2ca8!8m2!3d-16.694937!4d-49.1081317!16s%2Fg%2F11vsr_fljp!19sChIJLztzdI7pXpMRqCxc3wqumM0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:30.375Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Kairós Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323193415_48",
+        "name": "Renova Odontologia",
+        "category": "Clínica odontológica",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dr. José Carneiro - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-000",
+        "rating": "5,0",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/Renova+Odontologia/data=!4m7!3m6!1s0x935ee8bef77d3ee3:0x3c40251ddb83f34a!8m2!3d-16.6985293!4d-49.1046578!16s%2Fg%2F11rl8bjc8j!19sChIJ4z59977oXpMRSvOD2x0lQDw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:26:33.415Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Renova Odontologia aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      }
+    ],
+    "currentIndex": 0,
+    "sentCount": 0,
+    "failedCount": 0,
+    "lastDispatchedAt": null,
+    "logs": [
+      "Campanha criada para 49 leads de \"Clínica odontológica\" em \"Senador Canedo, GO\". Agendada para 03/09/2026, 08:00:00."
+    ]
+  },
+  {
+    "id": "camp_1788323041533_5d4xi",
+    "name": "Empresas industrias em Senador Canedo",
+    "niche": "Empresas industrias",
+    "city": "Senador Canedo, GO",
+    "status": "SCHEDULED",
+    "createdAt": "2026-09-02T04:24:01.533Z",
+    "scheduledAt": "2026-09-03T11:30:00.000Z",
+    "intervalSeconds": 60,
+    "strategy": "step1",
+    "leads": [
+      {
+        "id": "lead_1788322921805_0",
+        "name": "Jaepel Papeis e Embalagens",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232375200",
+        "whatsapp": "556232375200",
+        "hasWhatsApp": true,
+        "website": "http://www.jaepel.com.br/",
+        "hasWebsite": true,
+        "address": "Rua Eixo Principal, S/N - Quadra 02 - Módulo 01/20 - Setor Agroindustrial, Sen. Canedo - GO, 75250-000",
+        "rating": "4,2",
+        "reviewsCount": 110,
+        "mapsUrl": "https://www.google.com/maps/place/Jaepel+Papeis+e+Embalagens/data=!4m7!3m6!1s0x935ee5f4b22e5699:0xb93ae4efe869906b!8m2!3d-16.7267784!4d-49.1404714!16s%2Fg%2F11g_vw64r!19sChIJmVYusvTlXpMRa5Bp6O_kOrk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:01.805Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Jaepel Papeis e Embalagens aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322924488_1",
+        "name": "Demazon Cosméticos",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232485858",
+        "whatsapp": "556232485858",
+        "hasWhatsApp": true,
+        "website": "https://demazon.com.br/",
+        "hasWebsite": true,
+        "address": "Rua Suiça, Qd. 10 Lt. 03 - Setor Genoveva Rezende - Machado, Sen. Canedo - GO, 75259-727",
+        "rating": "4,8",
+        "reviewsCount": 68,
+        "mapsUrl": "https://www.google.com/maps/place/Demazon+Cosm%C3%A9ticos/data=!4m7!3m6!1s0x935efa714595b6b9:0xcced3cca8701f778!8m2!3d-16.6833782!4d-49.1073092!16s%2Fg%2F11f33xdp8r!19sChIJubaVRXH6XpMRePcBh8o87cw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:04.489Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Demazon Cosméticos aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322926490_2",
+        "name": "Savoy",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06234144666",
+        "whatsapp": "556234144666",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Contorno Oeste - Distrito Agroindustrial, Sen. Canedo - GO",
+        "rating": "3,4",
+        "reviewsCount": 63,
+        "mapsUrl": "https://www.google.com/maps/place/Savoy/data=!4m7!3m6!1s0x935ee53eb4bd4965:0xc9905eb378d70c0!8m2!3d-16.7269877!4d-49.1449443!16s%2Fg%2F11q3qtcsyt!19sChIJZUm9tD7lXpMRwHCNN-sFmQw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:06.490Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Savoy aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322928375_3",
+        "name": "Softys Falcon - Fábrica Senador Canedo",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06236044000",
+        "whatsapp": "556236044000",
+        "hasWhatsApp": true,
+        "website": "https://softysfalcon.gupy.io/",
+        "hasWebsite": true,
+        "address": "R. Contorno Oeste - Distrito Agroindustrial, Sen. Canedo - GO, 75250-000",
+        "rating": "4,6",
+        "reviewsCount": 65,
+        "mapsUrl": "https://www.google.com/maps/place/Softys+Falcon+-+F%C3%A1brica+Senador+Canedo/data=!4m7!3m6!1s0x935ee58b0cd43337:0x3e95f5de62296d88!8m2!3d-16.727728!4d-49.1444311!16s%2Fg%2F11gdp9fvf2!19sChIJNzPUDIvlXpMRiG0pYt71lT4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:08.375Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Softys Falcon - Fábrica aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322930329_4",
+        "name": "Active Industria De Cosméticos sa",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "telefone, mencionado em 3 avaliações",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Anápolis - Vila Galvão, Sen. Canedo - GO, 75250-000",
+        "rating": "3,4",
+        "reviewsCount": 27,
+        "mapsUrl": "https://www.google.com/maps/place/Active+Industria+De+Cosm%C3%A9ticos+sa/data=!4m7!3m6!1s0x935ee58b732df5a9:0x3d9f2de4213fe51e!8m2!3d-16.7221989!4d-49.1457919!16s%2Fg%2F11c6r8nqg9!19sChIJqfUtc4vlXpMRHuU_IeQtnz0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:10.329Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Active Industria De Cosméticos sa aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322932235_5",
+        "name": "Sol Ind. Com. de Bebidas",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06240086500",
+        "whatsapp": "556240086500",
+        "hasWhatsApp": true,
+        "website": "http://www.solbebidas.com/",
+        "hasWebsite": true,
+        "address": "Rua Jc 19, s/n - Quadra 29 - Lote 9/16 - Res. Jardim Canedo II, Sen. Canedo - GO, 75250-292",
+        "rating": "4,8",
+        "reviewsCount": 53,
+        "mapsUrl": "https://www.google.com/maps/place/Sol+Ind.+Com.+de+Bebidas/data=!4m7!3m6!1s0x935ee5fe2aba2d35:0xb866dd30b4b1a5d4!8m2!3d-16.7029714!4d-49.1124674!16s%2Fg%2F11gzs13gw!19sChIJNS26Kv7lXpMR1KWxtDDdZrg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:12.235Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Sol Ind. Com. de Bebidas aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322934257_6",
+        "name": "Cicopal Indústria e Comércio de Produtos Alimentícios",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06240054400",
+        "whatsapp": "556240054400",
+        "hasWhatsApp": true,
+        "website": "http://www.cicopal.com.br/",
+        "hasWebsite": true,
+        "address": "Av Tropical modulo 2 Distrito Industrial Brasil Central s/n - Recanto dos Sonhos, Sen. Canedo - GO, 75251-722",
+        "rating": "4,1",
+        "reviewsCount": 376,
+        "mapsUrl": "https://www.google.com/maps/place/Cicopal+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Produtos+Aliment%C3%ADcios/data=!4m7!3m6!1s0x935ee8a14a8431f7:0x5cbeb8f9c6b1914f!8m2!3d-16.7085145!4d-49.1071326!16s%2Fg%2F11b6hp9nnd!19sChIJ9zGESqHoXpMRT5Gxxvm4vlw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:14.257Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Cicopal Indústria e Comércio aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322936235_7",
+        "name": "Ciaplastic Embalagens I Indústria e Comércio de Embalagens",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232041113",
+        "whatsapp": "556232041113",
+        "hasWhatsApp": true,
+        "website": "https://ciaplastic.ind.br/",
+        "hasWebsite": true,
+        "address": "Avenida Nova Canaã - N 69 Quadra 02 - Lote 01A Polo Empresarial, Sen. Canedo - GO, 75257-247",
+        "rating": "4,5",
+        "reviewsCount": 14,
+        "mapsUrl": "https://www.google.com/maps/place/Ciaplastic+Embalagens+I+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Embalagens/data=!4m7!3m6!1s0x935ef25043ead9a7:0xc9aead83cbfbf391!8m2!3d-16.6715696!4d-49.1482787!16s%2Fg%2F11b6hkbd8p!19sChIJp9nqQ1DyXpMRkfP7y4Otrsk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:16.236Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Ciaplastic Embalagens I Indústria aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322938150_8",
+        "name": "Plastcan Indústria de Embalagens LTDA",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062920037006",
+        "whatsapp": "5562920037006",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Polo Empresarial Nova - R. 4, Quadra 06, lotes 25/26/27 - Canaã II, Sen. Canedo - GO",
+        "rating": "5,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Plastcan+Ind%C3%BAstria+de+Embalagens+LTDA/data=!4m7!3m6!1s0x935eef003677c8ab:0xa02d235b5ad92a9a!8m2!3d-16.673224!4d-49.1487088!16s%2Fg%2F11yp0jk1lx!19sChIJq8h3NgDvXpMRmirZWlsjLaA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:18.150Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Plastcan Indústria de Embalagens LTDA aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322939955_9",
+        "name": "CBAA Asfaltos - Fábrica GO",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062994154905",
+        "whatsapp": "5562994154905",
+        "hasWhatsApp": true,
+        "website": "https://cbaa-asfaltos.com.br/",
+        "hasWebsite": true,
+        "address": "R. JC-27 - Res. Jardim Canedo II, Sen. Canedo - GO, 75250-000",
+        "rating": "4,7",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/CBAA+Asfaltos+-+F%C3%A1brica+GO/data=!4m7!3m6!1s0x935ee982a1acac43:0x8acd3323cc3b9f5!8m2!3d-16.7025999!4d-49.1133639!16s%2Fg%2F11jycyxj8y!19sChIJQ6ysoYLpXpMR9bnDPDLTrAg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:19.955Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da CBAA Asfaltos - Fábrica GO aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322941767_10",
+        "name": "Dinâmica Industrial",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062981637110",
+        "whatsapp": "5562981637110",
+        "hasWhatsApp": true,
+        "website": "http://www.dinamicaindustrial.com.br/",
+        "hasWebsite": true,
+        "address": "Rua MB 18 Qd I-2 LT 11-A, Sen. Canedo - GO, 75250-769",
+        "rating": "5,0",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Din%C3%A2mica+Industrial/data=!4m7!3m6!1s0x935eef7740dda4ef:0xf8afca8ee7e36ec8!8m2!3d-16.7039859!4d-49.1268887!16s%2Fg%2F11h1_nzlxk!19sChIJ76TdQHfvXpMRyG7j547Kr_g?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:21.767Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Dinâmica Industrial aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322943603_11",
+        "name": "CIELT S/A - Indústria e Montagens",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232736644",
+        "whatsapp": "556232736644",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Alameda do Sapé, 7 - Área Administrativa, Sen. Canedo - GO, 75250-000",
+        "rating": "4,2",
+        "reviewsCount": 57,
+        "mapsUrl": "https://www.google.com/maps/place/CIELT+S%2FA+-+Ind%C3%BAstria+e+Montagens/data=!4m7!3m6!1s0x935ee5c48b8d6f49:0x935dd50632c387b1!8m2!3d-16.7495803!4d-49.1303024!16s%2Fg%2F11b6hmxf8x!19sChIJSW-Ni8TlXpMRsYfDMgbVXZM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:23.603Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da CIELT S/A - Indústria aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322945452_12",
+        "name": "Granplast Indústria e Comércio de Plásticos",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235339302",
+        "whatsapp": "556235339302",
+        "hasWhatsApp": true,
+        "website": "http://www.granplast.ind.br/",
+        "hasWebsite": true,
+        "address": "Rua 10, N° 281 QD 08 LT 03 Polo Empresarial Nova Canaã, Sen. Canedo - GO, 75257-202",
+        "rating": "5,0",
+        "reviewsCount": 6,
+        "mapsUrl": "https://www.google.com/maps/place/Granplast+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Pl%C3%A1sticos/data=!4m7!3m6!1s0x935ee9785a39f83b:0x4a01c262fb5ad300!8m2!3d-16.6801528!4d-49.1465932!16s%2Fg%2F11fjs9nqkt!19sChIJO_g5WnjpXpMRANNa-2LCAUo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:25.452Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Granplast Indústria e Comércio aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322948028_13",
+        "name": "Grupo Tecnomont",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232497500",
+        "whatsapp": "556232497500",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Distrito Agroindustrial, Sen. Canedo - GO, 75250-000",
+        "rating": "4,4",
+        "reviewsCount": 18,
+        "mapsUrl": "https://www.google.com/maps/place/Grupo+Tecnomont/data=!4m7!3m6!1s0x935ee5f5cc0d390f:0xda88eee1266731fe!8m2!3d-16.7248689!4d-49.1383368!16s%2Fg%2F11h1qxqp6!19sChIJDzkNzPXlXpMR_jFnJuHuiNo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:28.028Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Grupo Tecnomont aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322949882_14",
+        "name": "Nativa Alimentos - Indústria",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06230873803",
+        "whatsapp": "556230873803",
+        "hasWhatsApp": true,
+        "website": "http://www.nativaalimentos.com.br/",
+        "hasWebsite": true,
+        "address": "Genoveva Rezende Machado - Rua Benedita de Castro, Qd 04 - Lt 07/15 - Santa Genoveva R Machado, Sen. Canedo - GO, 75259-730",
+        "rating": "4,5",
+        "reviewsCount": 15,
+        "mapsUrl": "https://www.google.com/maps/place/Nativa+Alimentos+-+Ind%C3%BAstria/data=!4m7!3m6!1s0x935ee8da1792f92b:0x6fc6ecde97124066!8m2!3d-16.683373!4d-49.1108584!16s%2Fg%2F11gd1wt3nz!19sChIJK_mSF9roXpMRZkASl97sxm8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:29.882Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Nativa Alimentos - Indústria aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322951832_15",
+        "name": "Incinera Tratamento de Resíduos LTDA",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232240005",
+        "whatsapp": "556232240005",
+        "hasWhatsApp": true,
+        "website": "http://www.incinera.com.br/",
+        "hasWebsite": true,
+        "address": "Rua Contorno Oeste, QD 04 - MOD 08 e 09 - Distrito Agroindustrial, Sen. Canedo - GO, 75252-320",
+        "rating": "4,3",
+        "reviewsCount": 82,
+        "mapsUrl": "https://www.google.com/maps/place/Incinera+Tratamento+de+Res%C3%ADduos+LTDA/data=!4m7!3m6!1s0x935ee58cb7c96189:0x5901c7448da98863!8m2!3d-16.7297991!4d-49.1425028!16s%2Fg%2F11dx8__k3s!19sChIJiWHJt4zlXpMRY4ipjUTHAVk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:31.832Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Incinera Tratamento de Resíduos LTDA aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322953798_16",
+        "name": "USIMAQ TECH Torneadora | Usinagem | Solda alumínio | Manutenção de betoneiras e equipamentos.",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062996593197",
+        "whatsapp": "5562996593197",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua bom sucesso qd6x lt01, Sen. Canedo - GO, 75261-380",
+        "rating": "3,7",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/USIMAQ+TECH+Torneadora+%7C+Usinagem+%7C+Solda+alum%C3%ADnio+%7C+Manuten%C3%A7%C3%A3o+de+betoneiras+e+equipamentos./data=!4m7!3m6!1s0x935ee92f5d55636b:0x540a564e80e0f2cd!8m2!3d-16.6981833!4d-49.0904141!16s%2Fg%2F11vy2p3r83!19sChIJa2NVXS_pXpMRzfLggE5WClQ?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:33.798Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da USIMAQ TECH Torneadora | aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322955692_17",
+        "name": "Softys Falcon - Active Ind. de Cosméticos S.A.",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "https://www.softys.com/pt-br/",
+        "hasWebsite": true,
+        "address": "75264899 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75264-899",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Softys+Falcon+-+Active+Ind.+de+Cosm%C3%A9ticos+S.A./data=!4m7!3m6!1s0x935ee96339277b81:0x9898202fb9dd806c!8m2!3d-16.7001459!4d-49.0999618!16s%2Fg%2F11n3mq_tv7!19sChIJgXsnOWPpXpMRbIDduS8gmJg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:35.692Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Softys Falcon - Active aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322957942_18",
+        "name": "Durini Indústria",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062999394400",
+        "whatsapp": "5562999394400",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R João XXIII Q 1 L 17/24 - Santa Genoveva R Machado, Sen. Canedo - GO, 75250-000",
+        "rating": "4,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Durini+Ind%C3%BAstria/data=!4m7!3m6!1s0x935ee9cc082b8037:0xef4eaddce84c35aa!8m2!3d-16.6842045!4d-49.1121166!16s%2Fg%2F11j0jh4tk4!19sChIJN4ArCMzpXpMRqjVM6NytTu8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:37.942Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Durini Indústria aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322960009_19",
+        "name": "Global indústria é com de acessórios",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. da Divisa, qd 38 - Res. Jardim Canedo III, Sen. Canedo - GO, 75250-382",
+        "rating": "3,7",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/Global+ind%C3%BAstria+%C3%A9+com+de+acess%C3%B3rios/data=!4m7!3m6!1s0x935eef0051ac0015:0x676f56b07342d20b!8m2!3d-16.7026107!4d-49.1233877!16s%2Fg%2F11y3r297x6!19sChIJFQCsUQDvXpMRC9JCc7BWb2c?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:40.009Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Global indústria é com aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322961793_20",
+        "name": "Império do Aço e Ferro Distribuidora",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062998605229",
+        "whatsapp": "5562998605229",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Via Láctea, Qd 03 - Lote 16 - Distrito Agroindustrial, Sen. Canedo - GO, 75252-008",
+        "rating": "5,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Imp%C3%A9rio+do+A%C3%A7o+e+Ferro+Distribuidora/data=!4m7!3m6!1s0x935eef91c607896b:0xbbad20a1fa4bf6bb!8m2!3d-16.710625!4d-49.133408!16s%2Fg%2F11z60sr08g!19sChIJa4kHxpHvXpMRu_ZL-qEgrbs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:41.793Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Império do Aço e aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322963680_21",
+        "name": "Transpetro - Terminal Senador Canedo",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06240050400",
+        "whatsapp": "556240050400",
+        "hasWhatsApp": true,
+        "website": "http://www.petrobras.com.br/pt/nossas-atividades/principais-operacoes/terminais-e-oleodutos/terminal-senador-canedo.htm",
+        "hasWebsite": true,
+        "address": "Rodovia Municipal SEN 001, km 1, s/n Zona Industrial, Sen. Canedo - GO, 75250-000",
+        "rating": "4,5",
+        "reviewsCount": 88,
+        "mapsUrl": "https://www.google.com/maps/place/Transpetro+-+Terminal+Senador+Canedo/data=!4m7!3m6!1s0x935ee8a569c90eef:0xb07671078b2289cc!8m2!3d-16.707919!4d-49.1112153!16s%2Fg%2F11b69xb13_!19sChIJ7w7JaaXoXpMRzIkiiwdxdrA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:43.680Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Transpetro - Terminal aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322965540_22",
+        "name": "RR Indústria e Comércio de Paletes e Madeira LTDA",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062981262346",
+        "whatsapp": "5562981262346",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua 01, Nro R20 - Distrito Agroindustrial, Sen. Canedo - GO, 75252-300",
+        "rating": "4,8",
+        "reviewsCount": 18,
+        "mapsUrl": "https://www.google.com/maps/place/RR+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Paletes+e+Madeira+LTDA/data=!4m7!3m6!1s0x935ee5f5015c9799:0xc5de1a30ae444d1c!8m2!3d-16.7253088!4d-49.1401631!16s%2Fg%2F11c6cx2zy5!19sChIJmZdcAfXlXpMRHE1ErjAa3sU?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:45.540Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da RR Indústria e Comércio aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322967421_23",
+        "name": "USIMAK",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06230167272",
+        "whatsapp": "556230167272",
+        "hasWhatsApp": true,
+        "website": "http://www.usimak.com.br/",
+        "hasWebsite": true,
+        "address": "Rua MB 18, Quadra I-4, Lote 15, s/n - Polo industrial - Santa Edvirgens, Sen. Canedo - GO, 75250-762",
+        "rating": "4,3",
+        "reviewsCount": 15,
+        "mapsUrl": "https://www.google.com/maps/place/USIMAK/data=!4m7!3m6!1s0x935eee0d1564b793:0x2f9d6edfd7872ac9!8m2!3d-16.7050706!4d-49.1276874!16s%2Fg%2F12ml2vw00!19sChIJk7dkFQ3uXpMRySqH199unS8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:47.421Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da USIMAK aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322969390_24",
+        "name": "Decio Distribuidora Senador Canedo",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235123600",
+        "whatsapp": "556235123600",
+        "hasWhatsApp": true,
+        "website": "http://www.grupodecio.com.br/",
+        "hasWebsite": true,
+        "address": "Av. Niterói Copacabana s/n, Quadra 4, Lotes R1/19 - St. Comercial, Sen. Canedo - GO, 75250-000",
+        "rating": "5,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Decio+Distribuidora+Senador+Canedo/data=!4m7!3m6!1s0x935ee89cc0a4baad:0x41fb286a63a578ce!8m2!3d-16.7009085!4d-49.1102242!16s%2Fg%2F11dzt5486f!19sChIJrbqkwJzoXpMRznilY2oo-0E?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:49.390Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Decio Distribuidora aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322971419_25",
+        "name": "Premier Industria e Comercio e Exportação Eireli - Me",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06230103322",
+        "whatsapp": "556230103322",
+        "hasWhatsApp": true,
+        "website": "https://www.premierindustria.com.br/",
+        "hasWebsite": true,
+        "address": "R. Suíça, 567-479 - Santa Genoveva R Machado, Sen. Canedo - GO, 75250-000",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Premier+Industria+e+Comercio+e+Exporta%C3%A7%C3%A3o+Eireli+-+Me/data=!4m7!3m6!1s0x935ee973ea82aadf:0xb95dc4d01d492ed9!8m2!3d-16.6839408!4d-49.1079592!16s%2Fg%2F11rs2vbq_4!19sChIJ36qC6nPpXpMR2S5JHdDEXbk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:51.419Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Premier Industria e Comercio aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322973571_26",
+        "name": "Embalagens Silva",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "062992493667",
+        "whatsapp": "5562992493667",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dom Emanuel, R. Dr. Anuar Auad, Qd. 02 - Lt. 10, Sen. Canedo - GO, 75261-142",
+        "rating": "4,8",
+        "reviewsCount": 104,
+        "mapsUrl": "https://www.google.com/maps/place/Embalagens+Silva/data=!4m7!3m6!1s0x935ee8c062c931ff:0xbccb752c2ad9d4d5!8m2!3d-16.6952086!4d-49.1042464!16s%2Fg%2F11f0435nt0!19sChIJ_zHJYsDoXpMR1dTZKix1y7w?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:53.571Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Embalagens Silva aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322975739_27",
+        "name": "Flexa embalagens",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062993387032",
+        "whatsapp": "5562993387032",
+        "hasWhatsApp": true,
+        "website": "https://www.instagram.com/flexa_embalagens?igsh=MTF3dG8xcHQ0NW5hbw==",
+        "hasWebsite": true,
+        "address": "Av. São Paulo, 290 - Vila Galvão, Sen. Canedo - GO, 75250-000",
+        "rating": "5,0",
+        "reviewsCount": 1,
+        "mapsUrl": "https://www.google.com/maps/place/Flexa+embalagens/data=!4m7!3m6!1s0x935eef00659d75af:0xd8e56f2ca5cd92fb!8m2!3d-16.6943757!4d-49.1899652!16s%2Fg%2F11vx6xbmn_!19sChIJr3WdZQDvXpMR-5LNpSxv5dg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:55.739Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Flexa embalagens aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322977719_28",
+        "name": "Tescan",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235122900",
+        "whatsapp": "556235122900",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "com Copacabana - R. Niterói - St. Comercial, Sen. Canedo - GO, 75250-000",
+        "rating": "3,8",
+        "reviewsCount": 193,
+        "mapsUrl": "https://www.google.com/maps/place/Tescan/data=!4m7!3m6!1s0x935ee8b983b70c97:0x42e747860c7c951c!8m2!3d-16.7014123!4d-49.1104493!16s%2Fg%2F11b6gg5073!19sChIJlwy3g7noXpMRHJV8DIZH50I?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:57.719Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Tescan aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322979683_29",
+        "name": "Embale Senador Canedo",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062982901294",
+        "whatsapp": "5562982901294",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. Dr. José Carneiro, Qd 11 - Lt 23 - Res. Jardim Canedo I, Sen. Canedo - GO, 75250-157",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Embale+Senador+Canedo/data=!4m7!3m6!1s0x935ee9475a9806f3:0x378deb111fa307a2!8m2!3d-16.6905097!4d-49.1125149!16s%2Fg%2F11gl30vh5f!19sChIJ8waYWkfpXpMRogejHxHrjTc?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:22:59.683Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Embale aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322981551_30",
+        "name": "Finart Indústria e Comércio de Móveis (Fábrica)",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232802395",
+        "whatsapp": "556232802395",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua 06 Quadra04 Modulo16/17 - Distrito Agroindustrial, Sen. Canedo - GO, 75252-315",
+        "rating": "5,0",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Finart+Ind%C3%BAstria+e+Com%C3%A9rcio+de+M%C3%B3veis+%28F%C3%A1brica%29/data=!4m7!3m6!1s0x935ee5f2cb7db8c1:0xd4c1f2325870959a!8m2!3d-16.7318383!4d-49.1423966!16s%2Fg%2F11hb67jk_z!19sChIJwbh9y_LlXpMRmpVwWDLywdQ?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:01.551Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Finart Indústria e Comércio aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322983314_31",
+        "name": "Vitralle - Indústria de Móveis",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232788787",
+        "whatsapp": "556232788787",
+        "hasWhatsApp": true,
+        "website": "http://www.vitralle.com.br/",
+        "hasWebsite": true,
+        "address": "R. 7, 151 - Distrito Agroindustrial, Sen. Canedo - GO",
+        "rating": "5,0",
+        "reviewsCount": 6,
+        "mapsUrl": "https://www.google.com/maps/place/Vitralle+-+Ind%C3%BAstria+de+M%C3%B3veis/data=!4m7!3m6!1s0x935ee50021472d71:0xab38ec09006f0dc7!8m2!3d-16.7313889!4d-49.1432904!16s%2Fg%2F11lcvgx019!19sChIJcS1HIQDlXpMRxw1vAAnsOKs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:03.314Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Vitralle - Indústria de Móveis aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322985084_32",
+        "name": "Fort Aço, Colunas, Treliças, Vergalhões, Pregos, Arames",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06230103110",
+        "whatsapp": "556230103110",
+        "hasWhatsApp": true,
+        "website": "http://daqui.net.br/site/anunciante.php?cod_anunciante=1893",
+        "hasWebsite": true,
+        "address": "Avenida Itapurã QD 18 LT 17 setor central III - Vila Santa Rosa, Sen. Canedo - GO, 75250-000",
+        "rating": "5,0",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Fort+A%C3%A7o,+Colunas,+Treli%C3%A7as,+Vergalh%C3%B5es,+Pregos,+Arames/data=!4m7!3m6!1s0x935ee96526de6a3f:0xdc8391af38e755d5!8m2!3d-16.7038322!4d-49.0986576!16s%2Fg%2F11fl0qm8c6!19sChIJP2reJmXpXpMR1VXnOK-Rg9w?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:05.084Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Fort Aço, Colunas, Treliças, aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322986830_33",
+        "name": "Frutos de Goiás - Unidade II",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. 13, 47 - Polo Empresarial Nova Canaa, Sen. Canedo - GO, 75257-187",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Frutos+de+Goi%C3%A1s+-+Unidade+II/data=!4m7!3m6!1s0x935ee90037f22c39:0x4bbdb61037d60726!8m2!3d-16.6969688!4d-49.0996638!16s%2Fg%2F11z8h7k98v!19sChIJOSzyNwDpXpMRJgfWNxC2vUs?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:06.830Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Frutos de Goiás - aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322988633_34",
+        "name": "IMOL - Inteligência Moveleira",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06232104444",
+        "whatsapp": "556232104444",
+        "hasWhatsApp": true,
+        "website": "http://www.grupoimol.com.br/",
+        "hasWebsite": true,
+        "address": "Rua 07, Qd. 04 - Distrito Agroindustrial, Sen. Canedo - GO, 75252-310",
+        "rating": "5,0",
+        "reviewsCount": 21,
+        "mapsUrl": "https://www.google.com/maps/place/IMOL+-+Intelig%C3%AAncia+Moveleira/data=!4m7!3m6!1s0x935ee5f28807b119:0xcaaa3d5554d0081d!8m2!3d-16.7321386!4d-49.1396567!16s%2Fg%2F12hl43kg0!19sChIJGbEHiPLlXpMRHQjQVFU9qso?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:08.633Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da IMOL - Inteligência Moveleira aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322990776_35",
+        "name": "Paraíso Gás - Distribuidora de Gás - Aguá Mineral Senador Canedo",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062993488468",
+        "whatsapp": "5562993488468",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Rua RP-10, Qd. 15 Lt. 09 Residencial Paraiso 1, Sen. Canedo - GO, 75260-231",
+        "rating": "4,3",
+        "reviewsCount": 24,
+        "mapsUrl": "https://www.google.com/maps/place/Para%C3%ADso+G%C3%A1s+-+Distribuidora+de+G%C3%A1s+-+Agu%C3%A1+Mineral+Senador+Canedo/data=!4m7!3m6!1s0x935ee8f248c2285b:0x7e88cae7735fb93c!8m2!3d-16.6861745!4d-49.0922713!16s%2Fg%2F11c6zw5rdx!19sChIJWyjCSPLoXpMRPLlfc-fKiH4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:10.776Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Paraíso Gás - Distribuidora aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322992516_36",
+        "name": "Fabeck Montagem e Manutenção Industrial",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062982330005",
+        "whatsapp": "5562982330005",
+        "hasWhatsApp": true,
+        "website": "http://www.fabeck.com.br/",
+        "hasWebsite": true,
+        "address": "AV Santo Antonio QD16A, LT 11A - Distrito Industrial Monte Horebe, Sen. Canedo - GO, 75254-863",
+        "rating": "5,0",
+        "reviewsCount": 2,
+        "mapsUrl": "https://www.google.com/maps/place/Fabeck+Montagem+e+Manuten%C3%A7%C3%A3o+Industrial/data=!4m7!3m6!1s0x935eef4ad950339f:0x618c52fb72358a57!8m2!3d-16.6908279!4d-49.1869555!16s%2Fg%2F11btt7zgxp!19sChIJnzNQ2UrvXpMRV4o1cvtSjGE?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:12.516Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Fabeck Montagem e Manutenção Industrial aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322994325_37",
+        "name": "SANESC",
+        "category": "Ver fotos",
+        "city": "Senador Canedo, GO",
+        "phone": "06235121456",
+        "whatsapp": "556235121456",
+        "hasWhatsApp": true,
+        "website": "http://saneamento.senadorcanedo.go.gov.br/servicoswebsaneamento/home.jsf",
+        "hasWebsite": true,
+        "address": "Av. Dom Emanuel, s/n - Bairro das Indústrias, Sen. Canedo - GO, 75250-000",
+        "rating": "1,3",
+        "reviewsCount": 374,
+        "mapsUrl": "https://www.google.com/maps/place/SANESC/data=!4m7!3m6!1s0x935ee8c6abb1c24f:0x39bcdf4603c5c135!8m2!3d-16.693587!4d-49.1047379!16s%2Fg%2F11b69h16t9!19sChIJT8Kxq8boXpMRNcHFA0bfvDk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:14.325Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da SANESC aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322996553_38",
+        "name": "DC montagens",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062991018880",
+        "whatsapp": "5562991018880",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Mestra Maria Peclat, Qd 5d Lt 14 casa 1 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-334",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/DC+montagens/data=!4m7!3m6!1s0x935ee98bcb173213:0x1df7b467a1c7c972!8m2!3d-16.6952359!4d-49.0913946!16s%2Fg%2F11pylbg1jm!19sChIJEzIXy4vpXpMRcsnHoWe09x0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:16.554Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da DC montagens aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788322998456_39",
+        "name": "Poliutech do Brasil",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235324143",
+        "whatsapp": "556235324143",
+        "hasWhatsApp": true,
+        "website": "http://poliutechdobrasil.com/",
+        "hasWebsite": true,
+        "address": "Av. Buritis, Qd 07 - Lote 06 - Res. Buritis, Sen. Canedo - GO, 75260-402",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Poliutech+do+Brasil/data=!4m7!3m6!1s0x935ee9632aae4973:0xbd35a7a80dd6dae8!8m2!3d-16.6916542!4d-49.0856979!16s%2Fg%2F11gs5gxn6c!19sChIJc0muKmPpXpMR6NrWDainNb0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:18.456Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Poliutech do Brasil aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323000378_40",
+        "name": "ELETROBORGES",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235127840",
+        "whatsapp": "556235127840",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Benjamin Santos, Quadra: 2 D ; Lote: 29 - Jardim de Todos Os Santos, Sen. Canedo - GO, 75261-309",
+        "rating": "4,0",
+        "reviewsCount": 215,
+        "mapsUrl": "https://www.google.com/maps/place/ELETROBORGES/data=!4m7!3m6!1s0x935ee88379894137:0x79007ce00eea02e7!8m2!3d-16.7009051!4d-49.0961749!16s%2Fg%2F11b6ht_nnz!19sChIJN0GJeYPoXpMR5wLqDuB8AHk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:20.378Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da ELETROBORGES aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323002196_41",
+        "name": "Dequalitá, Indústria de Móveis",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235943749",
+        "whatsapp": "556235943749",
+        "hasWhatsApp": true,
+        "website": "http://www.dequalita.com.br/",
+        "hasWebsite": true,
+        "address": "Rua 11 c/ Rua 17 Qd 2 Lt 03 - Polo Empresarial Nova Canaa - Res. Rio Araguaia, Sen. Canedo - GO, 75257-197",
+        "rating": "4,7",
+        "reviewsCount": 3,
+        "mapsUrl": "https://www.google.com/maps/place/Dequalit%C3%A1,+Ind%C3%BAstria+de+M%C3%B3veis/data=!4m7!3m6!1s0x935eeee66fc7b6b1:0xde5da7b924e78a44!8m2!3d-16.6785121!4d-49.1466997!16s%2Fg%2F11df4v_4vy!19sChIJsbbHb-buXpMRRIrnJLmnXd4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:22.196Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Dequalitá, Indústria de Móveis aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323004040_42",
+        "name": "FERRO E AÇO CANEDO",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062992614634",
+        "whatsapp": "5562992614634",
+        "hasWhatsApp": true,
+        "website": "http://www.ferroeacocanedo.com.br/",
+        "hasWebsite": true,
+        "address": "Avenida Dom Emanuel, R. Dr. Anuar Auad, QD 02 - LT 06, Sen. Canedo - GO, 75261-142",
+        "rating": "4,7",
+        "reviewsCount": 72,
+        "mapsUrl": "https://www.google.com/maps/place/FERRO+E+A%C3%87O+CANEDO/data=!4m7!3m6!1s0x935ee9022c8f3f83:0x182263a678a46403!8m2!3d-16.694841!4d-49.1043817!16s%2Fg%2F11b6hn11qs!19sChIJgz-PLALpXpMRA2SkeKZjIhg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:24.040Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da FERRO E AÇO CANEDO aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323006082_43",
+        "name": "Distrito Agroindustrial de Senador Canedo - DASC",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062998435315",
+        "whatsapp": "5562998435315",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Avenida Contorno Leste - Distrito Agroindustrial, Sen. Canedo - GO, 75252-282",
+        "rating": "3,8",
+        "reviewsCount": 4,
+        "mapsUrl": "https://www.google.com/maps/place/Distrito+Agroindustrial+de+Senador+Canedo+-+DASC/data=!4m7!3m6!1s0x935ee5f599fd90fd:0xb62c93b0312c81f3!8m2!3d-16.7234517!4d-49.1371131!16s%2Fg%2F11c6cp_6hj!19sChIJ_ZD9mfXlXpMR84EsMbCTLLY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:26.082Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Distrito Agroindustrial de  aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323007944_44",
+        "name": "PLAST PRINT SACOLAS",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "062984701622",
+        "whatsapp": "5562984701622",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. 11, QD.3 - LT.12-A - Conj. Uirapuru, Sen. Canedo - GO, 75261-214",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/PLAST+PRINT+SACOLAS/data=!4m7!3m6!1s0x935ee9c24b272d7d:0x44fd89145dc579de!8m2!3d-16.6966288!4d-49.1008688!16s%2Fg%2F11h8hdpfjk!19sChIJfS0nS8LpXpMR3nnFXRSJ_UQ?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:27.944Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da PLAST PRINT SACOLAS aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323010973_45",
+        "name": "Eletroborges Indústria",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "06235127840",
+        "whatsapp": "556235127840",
+        "hasWhatsApp": true,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Res. Morada do Bosque II, Sen. Canedo - GO",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Eletroborges+Ind%C3%BAstria/data=!4m7!3m6!1s0x935eef4bd0fc695d:0xcf91feeae5cb44ea!8m2!3d-16.7036439!4d-49.126749!16s%2Fg%2F11j131_rh2!19sChIJXWn80EvvXpMR6kTL5er-kc8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:30.973Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Eletroborges Indústria aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323012745_46",
+        "name": "Industrial Gás",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "Av. B - Bairro das Indústrias, Sen. Canedo - GO, 75250-000",
+        "rating": "N/A",
+        "reviewsCount": 0,
+        "mapsUrl": "https://www.google.com/maps/place/Industrial+G%C3%A1s/data=!4m7!3m6!1s0x935ee8ea2c5bf3e3:0x5e010999d46ec7c8!8m2!3d-16.6899358!4d-49.0995709!16s%2Fg%2F11fn7_c_bm!19sChIJ4_NbLOroXpMRyMdu1JkJAV4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:32.745Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Industrial Gás aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      },
+      {
+        "id": "lead_1788323014493_47",
+        "name": "Big Brother Frios Indústria-Casa De Carne",
+        "category": "Empresas industrias",
+        "city": "Senador Canedo, GO",
+        "phone": "Não informado",
+        "whatsapp": null,
+        "hasWhatsApp": false,
+        "website": "",
+        "hasWebsite": false,
+        "address": "R. Sen. Osires Teixeira, 223 - Conj. Uirapuru, Sen. Canedo - GO, 75250-000",
+        "rating": "3,9",
+        "reviewsCount": 8,
+        "mapsUrl": "https://www.google.com/maps/place/Big+Brother+Frios+Ind%C3%BAstria-Casa+De+Carne/data=!4m7!3m6!1s0x935ee894292cdc1d:0x6a57dd41ade2538a!8m2!3d-16.6986464!4d-49.0989665!16s%2Fg%2F11fqbp19_q!19sChIJHdwsKZToXpMRilPirUHdV2o?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MDgzMC4wIJJjKgBIAVAD&rclk=1",
+        "searchedAt": "2026-09-02T04:23:34.493Z",
+        "status": "NOVO",
+        "opportunities": [
+          {
+            "type": "SITE",
+            "badge": "🌐 Sem Site Oficial",
+            "description": "Oportunidade para criação de site.",
+            "color": "danger"
+          },
+          {
+            "type": "TAXA_RECORDE",
+            "badge": "🏆 Soft Opening (Taxa 70%+)",
+            "description": "Abertura em 2 etapas com maior taxa de resposta do mercado.",
+            "color": "success"
+          }
+        ],
+        "suggestedPitch": "Opa, tudo bem? Encontrei o contato da Big Brother Frios Indústria-Casa aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?"
+      }
+    ],
+    "currentIndex": 0,
+    "sentCount": 0,
+    "failedCount": 0,
+    "lastDispatchedAt": null,
+    "logs": [
+      "Campanha criada para 48 leads de \"Empresas industrias\" em \"Senador Canedo, GO\". Agendada para 03/09/2026, 08:30:00."
+    ]
+  }
+]
