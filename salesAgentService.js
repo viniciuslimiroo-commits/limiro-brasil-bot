@@ -136,17 +136,26 @@ REGRAS OBRIGATÓRIAS:
 
 Gere apenas o texto final da mensagem:`;
 
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { maxOutputTokens: 120, temperature: 0.7 }
-        })
-      });
+      const candidateModels = ['gemini-3.5-flash-lite', 'gemini-3.1-pro-preview', 'gemini-3.1-flash-lite', 'gemini-flash-latest'];
+      let aiReply = '';
 
-      const data = await response.json();
-      const aiReply = data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+      for (const modelName of candidateModels) {
+        try {
+          const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${process.env.GEMINI_API_KEY}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: { maxOutputTokens: 100, temperature: 0.7 }
+            })
+          });
+
+          const data = await response.json();
+          aiReply = data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+          if (aiReply) break;
+        } catch (_) {}
+      }
+
       if (aiReply) {
         return aiReply.replace(/^["']|["']$/g, '');
       }
@@ -200,12 +209,12 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
   // Etapa 1: Primeira mensagem de alguém de fora -> Menu de Escolha IA vs Humano
   if (!history.inboundStage || history.inboundStage === 'INITIAL_MENU' || history.messages.length <= 1) {
     history.inboundStage = 'CHOOSING_ATTENDANT';
-    return "Olá! Seja muito bem-vindo(a) à *Limiro Brasil*! 🚀\n\nPara agilizarmos o seu atendimento da melhor forma, como você prefere continuar?\n\n1️⃣ *Atendimento Inteligente com IA* 🤖\n_(Recomendado: Você adianta os detalhes do seu projeto agora mesmo sem esperar em filas, e seu atendimento com nosso especialista será muito mais rápido e assertivo!)_\n\n2️⃣ *Falar diretamente com Atendente Humano* 👤\n_(Aguardar a fila de atendimento do próximo consultor disponível)_\n\n👉 *Digite 1 ou 2 para escolher:*";
+    return "Olá! Seja muito bem-vindo(a) à *Limiro Brasil*! 🚀\n\nPara agilizarmos o seu atendimento, como você prefere continuar?\n\n1️⃣ *Atendimento Inteligente com IA* 🤖\n_(Recomendado: Você adianta os detalhes do seu projeto na hora sem esperar em filas!)_\n\n2️⃣ *Aguardar atendimento humano* 👤\n_(Aguardar na fila de atendimento)_\n\n👉 *Digite 1 ou 2 para escolher:*";
   }
 
   // Etapa 2: Escolha do Modo
   if (history.inboundStage === 'CHOOSING_ATTENDANT') {
-    const isOptionTwo = lower === '2' || lower.includes('humano') || lower.includes('atendente') || lower.includes('pessoa') || lower.includes('consultor');
+    const isOptionTwo = lower === '2' || lower.includes('humano') || lower.includes('atendente') || lower.includes('pessoa') || lower.includes('aguardar');
 
     if (isOptionTwo) {
       history.inboundStage = 'HUMAN_HANDOFF';
@@ -217,7 +226,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
           `👉 *Chame o cliente agora no WhatsApp para atendê-lo!*`;
         try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
       }
-      return "Perfeito! Já transferi sua conversa para nossa equipe humana. 🤝\n\nNosso consultor da *Limiro Brasil* foi notificado com prioridade e vai te responder aqui mesmo em instantes!";
+      return "Perfeito! Solicitação recebida. 🤝\n\nVocê já está na fila e um atendente humano vai te responder por aqui em instantes!";
     }
 
     history.inboundStage = 'QUALIFYING_WITH_AI';
@@ -225,7 +234,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
   }
 
   // Se o cliente pediu atendente humano no meio da conversa
-  if (lower.includes('falar com atendente') || lower.includes('falar com humano') || lower.includes('atendente humano') || lower.includes('pessoa real')) {
+  if (lower.includes('falar com atendente') || lower.includes('falar com humano') || lower.includes('atendente humano') || lower.includes('pessoa real') || lower.includes('aguardar humano')) {
     history.inboundStage = 'HUMAN_HANDOFF';
     const adminPhone = getAdminPhone();
     if (adminPhone && sendAdminAlert) {
@@ -237,7 +246,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
         `👉 *Chame o cliente agora no WhatsApp!*`;
       try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
     }
-    return "Com certeza! Já transferi seu atendimento para nossa equipe humana. 🤝 Nosso consultor da Limiro Brasil já recebeu seu histórico e vai te responder aqui em instantes!";
+    return "Com certeza! Solicitação recebida. 🤝 Você já está na fila e um atendente humano vai te responder por aqui em instantes!";
   }
 
   // Extrai nome próprio se ainda não tiver
@@ -255,25 +264,25 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
   const apiKey = process.env.GEMINI_API_KEY;
   if (apiKey) {
     try {
-      const prompt = `Você é o assistente comercial da Limiro Brasil no WhatsApp.
-Sua personalidade é SUPER SIMPÁTICA, EXTROVERTIDA E DIRETA AO PONTO.
+      const prompt = `Você é o consultor comercial da Limiro Brasil no WhatsApp.
+Seu estilo é DIRETO, PRÁTICO, PROFISSIONAL E ATENCIOSO.
 
-### REGRA DE OURO - MENSAGENS CURTAS:
-- RESPOSTAS ULTRA BREVES: Escreva no MÁXIMO 2 a 3 frases curtas (30 a 40 palavras no total).
-- PROIBIDO textões, parágrafos longos ou mensagens cansativas. Seja ágil como uma conversa real de WhatsApp!
-
-### TOM E OBJETIVO:
-- Seja simpático, animado e extrovertido (use emojis com moderação: "Show de bola, [Nome]! 😍", "Que demais!").
-- Faça APENAS 1 pergunta curtinha por vez para entender o negócio e a dor do cliente.
-- Descubra aos poucos: como funciona o atendimento dele hoje, qual o maior gargalo (tempo/faltas) e o que ele busca (Robô no WhatsApp, Site ou App).
+### DIRETRIZES DE ESTILO:
+- ZERO FRESCURA E ZERO EXAGERO: Não use bajulações ("você é visionária", "mulher do céu", etc.).
+- SEM EXCESSO DE EMOJIS: Use no máximo 0 a 1 emoji simples por mensagem ou nenhum.
+- RESPOSTAS CURTAS E DIRETAS: No máximo 2 a 3 frases objetivas. Sem enrolação.
+- Conduza um diagnóstico rápido e inteligente fazendo 1 pergunta prática por vez:
+  1. Entenda como o cliente gerencia o atendimento/agendamentos hoje (manual no zap/caderno ou sistema).
+  2. Entenda o maior gargalo (perda de tempo no zap, faltas de clientes, falta de site para passar credibilidade).
+  3. Identifique o interesse dele (Automação no WhatsApp, Site profissional ou Aplicativo).
 - NUNCA use o nome "Vinicius" (use "nosso especialista" ou "nossa equipe").
-- Quando ele pedir valor/preço, diga que é super acessível e que nosso especialista vai enviar a proposta sob medida aqui no zap.
+- Se o cliente perguntar preço ou quiser fechar, confirme que o valor é acessível e avise que nosso especialista vai enviar a proposta detalhada aqui no WhatsApp.
 
 HISTÓRICO DA CONVERSA:
 ${history.messages.map(m => `${m.sender === 'customer' ? 'Cliente' : 'Limiro Brasil'}: ${m.text}`).join('\n')}
 Cliente: "${incomingText}"
 
-Gere apenas a sua resposta CURTA e SIMPÁTICA (máximo 2-3 frases):`;
+Gere apenas a sua resposta direta e profissional para o WhatsApp:`;
 
       const candidateModels = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-flash-latest'];
       let text = '';
@@ -348,17 +357,17 @@ export async function handleSalesConversation({ phone, incomingText, senderJid, 
   }
 
   let lead = findLeadInfo(phone);
+  const existingHistory = convs[phone];
+  const isOutbound = !!(lead || (name && name !== 'Empresa') || (niche && niche !== 'Geral') || existingHistory?.flowType === 'OUTBOUND');
 
-  const isOutbound = !!(lead || name || niche || (senderJid && senderJid.includes('@lid') && Object.values(convs).some(c => c.flowType === 'OUTBOUND')));
-
-  const history = convs[phone] || {
+  const history = existingHistory || {
     phone,
     flowType: isOutbound ? 'OUTBOUND' : 'INBOUND',
     messages: [],
     stage: 'OPENING',
-    leadName: name || lead?.name || (isOutbound ? 'Auto Estufa & Funilaria Canedo' : null),
-    niche: niche || lead?.category || (isOutbound ? 'Funilaria e Pintura Automotiva' : null),
-    city: city || lead?.city || (isOutbound ? 'Senador Canedo, GO' : null),
+    leadName: name || lead?.name || null,
+    niche: niche || lead?.category || null,
+    city: city || lead?.city || null,
     hasWebsite: lead?.hasWebsite || false,
     createdAt: new Date().toISOString()
   };
