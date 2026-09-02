@@ -130,7 +130,7 @@ REGRAS OBRIGATÓRIAS:
 3. Responda em no máximo 2 a 3 frases curtas e diretas no tom natural do WhatsApp do Brasil ("Boa!", "Entendi perfeitamente", "Show!").
 4. Se o cliente respondeu à primeira mensagem de abertura: faça a pergunta investigativa de diagnóstico perguntando como eles recebem orçamentos/agendamentos hoje (se é só manual no WhatsApp ou se já têm site/sistema próprio).
 5. Se o cliente disse que só atende no WhatsApp manual ou não tem site: ofereça as 3 soluções (site rápido, aplicativo próprio ou automação de atendimento) e pergunte qual formato ele prefere.
-6. Se o cliente perguntou preço, valor, pediu proposta ou quer fechar: confirme que é muito acessível e diga que o Vinicius da Limiro Brasil vai enviar a proposta completa com detalhes agora.
+6. Se o cliente perguntou preço, valor, pediu proposta ou quer fechar: confirme que é muito acessível e diga que nosso especialista da Limiro Brasil vai enviar a proposta completa com detalhes agora.
 
 Gere apenas o texto final da mensagem:`;
 
@@ -216,7 +216,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
           `👉 *Chame o cliente agora no WhatsApp para atendê-lo!*`;
         try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
       }
-      return "Perfeito! Já transferi sua conversa para nossa equipe humana. 🤝\n\nO Vinicius da *Limiro Brasil* foi notificado com prioridade e vai te responder aqui mesmo em instantes!";
+      return "Perfeito! Já transferi sua conversa para nossa equipe humana. 🤝\n\nNosso consultor da *Limiro Brasil* foi notificado com prioridade e vai te responder aqui mesmo em instantes!";
     }
 
     // Se escolheu Opção 1 (IA) ou qualquer outra resposta inicial
@@ -232,7 +232,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
   }
 
   // Etapa 4: Escolheu o serviço ou quer proposta
-  history.inboundStage = 'FORWARDED_TO_VINICIUS';
+  history.inboundStage = 'FORWARDED_TO_SPECIALIST';
   
   const adminPhone = getAdminPhone();
   if (adminPhone && sendAdminAlert) {
@@ -249,7 +249,7 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
     } catch (e) {}
   }
 
-  return `Perfeito, ${history.customerName || ''}! Já anotei todas as informações com prioridade. 🚀\n\nO Vinicius da nossa equipe já recebeu seu resumo completo e vai te chamar aqui mesmo em instantes com a proposta ideal sob medida para você!`;
+  return `Perfeito, ${history.customerName || ''}! Já anotei todas as informações com prioridade. 🚀\n\nNosso especialista já recebeu seu resumo completo e vai te chamar aqui mesmo em instantes com a proposta ideal sob medida para você!`;
 }
 
 /**
@@ -331,17 +331,17 @@ export async function handleSalesConversation({ phone, incomingText, senderJid, 
 
     if (isClosingIntent && history.stage !== 'HANDED_OFF') {
       history.stage = 'READY_TO_CLOSE';
-      reply = "Show! O investimento é bem acessível e a gente parcela. Vou só puxar o modelo certinho pra vocês e o Vinicius já te manda a proposta completa com desconto aqui no zap!";
+      reply = `Show! O investimento é super acessível e cabe com tranquilidade no orçamento da empresa (além de parcelamento facilitado). 💰\n\nComo você prefere receber a proposta?\n\n1️⃣ *Continuar com a IA* 🤖 (Adiantar os detalhes agora mesmo sem esperar)\n2️⃣ *Falar com Especialista Humano* 👤 (Nosso consultor te chama aqui com a proposta personalizada)\n\n👉 *Digite 1 ou 2 para escolher:*`;
 
       const adminPhone = getAdminPhone();
       if (adminPhone && sendAdminAlert) {
-        const summaryMsg = `🚨 *NOVO CLIENTE PRONTO PARA FECHAR!*\n\n` +
+        const summaryMsg = `🚨 *CLIENTE PEDIU VALORES / QUER FECHAR!*\n\n` +
           `🏢 *Empresa:* ${companyName}\n` +
           `📍 *Nicho & Cidade:* ${history.niche || 'Comércio'} • ${history.city || 'Senador Canedo'}\n` +
           `📱 *WhatsApp do Cliente:* https://wa.me/${phone}\n` +
           `💬 *Última Mensagem dele:* "${incomingText}"\n` +
           `📝 *Histórico:* ${history.messages.slice(-4).map(m => `\n- ${m.sender === 'customer' ? 'Ele' : 'Nós'}: ${m.text}`).join('')}\n\n` +
-          `👉 *Chame o cliente agora para fechar o contrato!*`;
+          `👉 *Chame o cliente agora no WhatsApp para fechar a venda!*`;
 
         try {
           await sendAdminAlert(adminPhone, summaryMsg);
