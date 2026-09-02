@@ -190,44 +190,66 @@ Gere apenas o texto final da mensagem:`;
 
 /**
  * Atendimento Receptivo da Limiro Brasil (Inbound - Quando alguém chama de fora)
+ * Permite ao cliente escolher entre Atendimento com IA (mais rápido) ou Humano
  */
 async function handleInboundLimiroCustomer({ history, incomingText, phone, sendAdminAlert }) {
   const lower = incomingText.toLowerCase().trim();
 
-  // Etapa 1: Primeira mensagem de alguém de fora
-  if (history.messages.length <= 1) {
-    history.inboundStage = 'ASKING_NAME';
-    return "Olá! Seja muito bem-vindo(a) à *Limiro Brasil*! 🚀\n\nAqui nós desenvolvemos sites profissionais, aplicativos sob medida e automações de atendimento no WhatsApp com IA.\n\nComo posso te chamar para darmos continuidade?";
+  // Etapa 1: Primeira mensagem de alguém de fora -> Menu de Escolha IA vs Humano
+  if (!history.inboundStage || history.inboundStage === 'INITIAL_MENU' || history.messages.length <= 1) {
+    history.inboundStage = 'CHOOSING_ATTENDANT';
+    return "Olá! Seja muito bem-vindo(a) à *Limiro Brasil*! 🚀\n\nPara agilizarmos o seu atendimento da melhor forma, como você prefere continuar?\n\n1️⃣ *Atendimento Inteligente com IA* 🤖\n_(Recomendado: Você adianta os detalhes do seu projeto agora mesmo sem esperar em filas, e seu atendimento com nosso especialista será muito mais rápido e assertivo!)_\n\n2️⃣ *Falar diretamente com Atendente Humano* 👤\n_(Aguardar a fila de atendimento do próximo consultor disponível)_\n\n👉 *Digite 1 ou 2 para escolher:*";
   }
 
-  // Etapa 2: O cliente informou o nome
-  if (history.inboundStage === 'ASKING_NAME') {
+  // Etapa 2: Escolha do Modo
+  if (history.inboundStage === 'CHOOSING_ATTENDANT') {
+    const isOptionOne = lower === '1' || lower.includes('ia') || lower.includes('inteligente') || lower.includes('robo') || lower.includes('robô') || lower.includes('opcao 1') || lower.includes('opção 1');
+    const isOptionTwo = lower === '2' || lower.includes('humano') || lower.includes('atendente') || lower.includes('pessoa') || lower.includes('consultor') || lower.includes('opcao 2') || lower.includes('opção 2');
+
+    if (isOptionTwo) {
+      history.inboundStage = 'HUMAN_HANDOFF';
+      const adminPhone = getAdminPhone();
+      if (adminPhone && sendAdminAlert) {
+        const alertMsg = `🚨 *SOLICITAÇÃO DE ATENDIMENTO HUMANO - LIMIRO BRASIL!*\n\n` +
+          `📱 *WhatsApp do Cliente:* https://wa.me/${phone}\n` +
+          `💬 *Mensagem dele:* "${incomingText}"\n\n` +
+          `👉 *Chame o cliente agora no WhatsApp para atendê-lo!*`;
+        try { await sendAdminAlert(adminPhone, alertMsg); } catch (_) {}
+      }
+      return "Perfeito! Já transferi sua conversa para nossa equipe humana. 🤝\n\nO Vinicius da *Limiro Brasil* foi notificado com prioridade e vai te responder aqui mesmo em instantes!";
+    }
+
+    // Se escolheu Opção 1 (IA) ou qualquer outra resposta inicial
+    history.inboundStage = 'ASKING_NAME_AND_NICHE';
+    return "Excelente escolha! ⚡ Com o atendimento inteligente conseguimos adiantar todos os detalhes do seu projeto na hora.\n\nPara começarmos, *como posso te chamar e qual o ramo de atuação da sua empresa?*";
+  }
+
+  // Etapa 3: Coletando Nome e Ramo (para quem escolheu IA)
+  if (history.inboundStage === 'ASKING_NAME_AND_NICHE') {
     history.customerName = incomingText.replace(/^(meu nome é|sou o|sou a|me chamo|o meu é)\s*/i, '').trim();
     history.inboundStage = 'ASKING_SERVICE';
-    return `Prazer, *${history.customerName}*! Qual dessas soluções você tem interesse hoje para a sua empresa?\n\n1️⃣ Criação de Site Profissional no Google\n2️⃣ Aplicativo Próprio sob medida\n3️⃣ Atendente Virtual no WhatsApp com IA`;
+    return `Prazer, *${history.customerName}*! Qual dessas soluções você tem interesse hoje para o seu negócio?\n\n1️⃣ *Criação de Site Profissional no Google*\n2️⃣ *Aplicativo Próprio sob medida (iOS e Android)*\n3️⃣ *Atendente Virtual e Automação no WhatsApp*\n\n👉 *Digite 1, 2 ou 3:*`;
   }
 
-  // Etapa 3: O cliente escolheu o serviço ou quer fechar / saber valores
+  // Etapa 4: Escolheu o serviço ou quer proposta
   history.inboundStage = 'FORWARDED_TO_VINICIUS';
   
   const adminPhone = getAdminPhone();
   if (adminPhone && sendAdminAlert) {
-    const alertMsg = `🌟 *NOVO CLIENTE RECEPTIVO LIMIRO BRASIL!*\n\n` +
-      `👤 *Nome:* ${history.customerName || 'Cliente'}\n` +
+    const alertMsg = `🌟 *NOVO LEAD QUALIFICADO VIA IA - LIMIRO BRASIL!*\n\n` +
+      `👤 *Cliente / Empresa:* ${history.customerName || 'Cliente'}\n` +
       `📱 *WhatsApp:* https://wa.me/${phone}\n` +
-      `💬 *Interesse / Mensagem:* "${incomingText}"\n` +
+      `💬 *Interesse / Resposta:* "${incomingText}"\n` +
       `📝 *Histórico:* ${history.messages.map(m => `\n- ${m.sender === 'customer' ? 'Cliente' : 'Limiro'}: ${m.text}`).join('')}\n\n` +
-      `👉 *Entre em contato para fechar a venda!*`;
+      `👉 *Entre em contato para apresentar a proposta e fechar a venda!*`;
 
     try {
       await sendAdminAlert(adminPhone, alertMsg);
-      console.log(`[INBOUND] 🚨 Alerta de lead receptivo enviado para o admin (${adminPhone})!`);
-    } catch (e) {
-      console.error('[INBOUND] Erro ao enviar alerta para o admin:', e);
-    }
+      console.log(`[INBOUND] 🚨 Alerta de lead qualificado enviado para o admin (${adminPhone})!`);
+    } catch (e) {}
   }
 
-  return `Excelente escolha, ${history.customerName || ''}! O Vinicius da nossa equipe já foi notificado e vai te chamar aqui mesmo com todas as informações e proposta personalizada em instantes!`;
+  return `Perfeito, ${history.customerName || ''}! Já anotei todas as informações com prioridade. 🚀\n\nO Vinicius da nossa equipe já recebeu seu resumo completo e vai te chamar aqui mesmo em instantes com a proposta ideal sob medida para você!`;
 }
 
 /**
