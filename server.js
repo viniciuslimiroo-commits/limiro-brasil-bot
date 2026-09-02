@@ -368,20 +368,140 @@ app.post('/api/benchmark/dispatches', async (req, res) => {
   });
 });
 
-app.post('/api/test/dispatch', async (req, res) => {
-  const { phone, name } = req.body;
+// ==========================================
+// ROTAS DO SIMULADOR DE ATENDIMENTO E PROSPECÇÃO
+// ==========================================
+app.post('/api/simulator/start-outbound', async (req, res) => {
+  const { phone = '5562900000001', businessName = 'Auto Center Imperial', niche = 'Oficina Mecânica', city = 'Senador Canedo' } = req.body;
+  const { handleSalesConversation } = await import('./salesAgentService.js');
+  
+  // Reseta o número fictício primeiro
+  await handleSalesConversation({ phone, incomingText: '!reset' });
+
+  // Dispara a mensagem de abertura de prospecção
+  const openingText = `Opa, tudo bem? Encontrei o contato da ${businessName} aqui em ${city}, posso tirar uma dúvida rápida com vocês?`;
+  
+  // Registra no histórico como envio do bot
+  const convsFile = path.join(__dirname, 'data', 'conversations.json');
+  let convs = {};
+  try { if (fs.existsSync(convsFile)) convs = JSON.parse(fs.readFileSync(convsFile, 'utf8')); } catch (_) {}
+  
+  convs[phone] = {
+    phone,
+    flowType: 'OUTBOUND',
+    messages: [{ sender: 'limiro', text: openingText, timestamp: new Date().toISOString() }],
+    stage: 'OPENING_SENT',
+    leadName: businessName,
+    niche,
+    city,
+    hasWebsite: false,
+    createdAt: new Date().toISOString()
+  };
+  fs.writeFileSync(convsFile, JSON.stringify(convs, null, 2), 'utf8');
+
+  res.json({ success: true, phone, openingText, history: convs[phone] });
+});
+
+app.post('/api/simulator/chat', async (req, res) => {
+  const { phone = '5562900000001', text, businessName, niche, city, flowType = 'INBOUND' } = req.body;
+  const { handleSalesConversation } = await import('./salesAgentService.js');
+
+  try {
+    const result = await handleSalesConversation({
+      phone,
+      incomingText: text,
+      name: businessName,
+      niche,
+      city
+    });
+
+    const convsFile = path.join(__dirname, 'data', 'conversations.json');
+    let convs = {};
+    try { if (fs.existsSync(convsFile)) convs = JSON.parse(fs.readFileSync(convsFile, 'utf8')); } catch (_) {}
+
+    res.json({
+      success: true,
+      reply: result.reply,
+      stage: result.stage || convs[phone]?.stage || 'QUALIFYING',
+      history: convs[phone] || { messages: [] }
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/test/dispatch-real', async (req, res) => {
+  const { phone, businessName = 'Auto Center Imperial', niche = 'Oficina Mecânica e Troca de Óleo', city = 'Senador Canedo', flowType = 'OUTBOUND' } = req.body;
+  
   if (!phone) {
-    return res.status(400).json({ error: 'Telefone é obrigatório.' });
+    return res.status(400).json({ error: 'Informe o número do WhatsApp com DDD.' });
   }
 
-  const cleanPhone = phone.replace(/\D/g, '');
-  const messageText = `Opa, tudo bem? Encontrei o contato da ${name || 'Empresa'} aqui em Senador Canedo, posso tirar uma dúvida rápida com vocês?`;
+  let cleanPhone = phone.replace(/\D/g, '');
+  if (!cleanPhone.startsWith('55') && (cleanPhone.length === 10 || cleanPhone.length === 11)) {
+    cleanPhone = '55' + cleanPhone;
+  }
 
   try {
     const { sendWhatsAppMessage } = await import('./whatsappService.js');
-    await sendWhatsAppMessage(cleanPhone, messageText);
-    res.json({ success: true, message: 'Disparo enviado com sucesso!', phone: cleanPhone, text: messageText });
+    const { handleSalesConversation } = await import('./salesAgentService.js');
+
+    // 1. Reseta o histórico deste número para começar do zero
+    await handleSalesConversation({ phone: cleanPhone, incomingText: '!reset' });
+
+    let messageToSend = '';
+
+    if (flowType === 'OUTBOUND') {
+      messageToSend = `Opa, tudo bem? Encontrei o contato da ${businessName} aqui em ${city}, posso tirar uma dúvida rápida com vocês?`;
+      
+      // Registra no histórico como envio inicial de prospecção
+      const convsFile = path.join(__dirname, 'data', 'conversations.json');
+      let convs = {};
+      try { if (fs.existsSync(convsFile)) convs = JSON.parse(fs.readFileSync(convsFile, 'utf8')); } catch (_) {}
+      
+      convs[cleanPhone] = {
+        phone: cleanPhone,
+        flowType: 'OUTBOUND',
+        messages: [{ sender: 'limiro', text: messageToSend, timestamp: new Date().toISOString() }],
+        stage: 'OPENING_SENT',
+        leadName: businessName,
+        niche,
+        city,
+        hasWebsite: false,
+        createdAt: new Date().toISOString()
+      };
+      fs.writeFileSync(convsFile, JSON.stringify(convs, null, 2), 'utf8');
+
+    } else {
+      // Inbound: envia o menu inicial
+      messageToSend = "Olá! Seja muito bem-vindo(a) à *Limiro Brasil*! 🚀\n\nPara agilizarmos o seu atendimento, como você prefere continuar?\n\n1️⃣ *Atendimento Inteligente com IA* 🤖\n_(Recomendado: Você adianta os detalhes do seu projeto na hora sem esperar em filas!)_\n\n2️⃣ *Aguardar atendimento humano* 👤\n_(Aguardar na fila de atendimento)_\n\n👉 *Digite 1 ou 2 para escolher:*";
+      
+      const convsFile = path.join(__dirname, 'data', 'conversations.json');
+      let convs = {};
+      try { if (fs.existsSync(convsFile)) convs = JSON.parse(fs.readFileSync(convsFile, 'utf8')); } catch (_) {}
+      
+      convs[cleanPhone] = {
+        phone: cleanPhone,
+        flowType: 'INBOUND',
+        inboundStage: 'CHOOSING_ATTENDANT',
+        messages: [{ sender: 'limiro', text: messageToSend, timestamp: new Date().toISOString() }],
+        createdAt: new Date().toISOString()
+      };
+      fs.writeFileSync(convsFile, JSON.stringify(convs, null, 2), 'utf8');
+    }
+
+    // 2. Dispara a mensagem no WhatsApp real
+    await sendWhatsAppMessage(cleanPhone, messageToSend);
+    console.log(`[DISPARO REAL] 🚀 Mensagem de teste enviada para ${cleanPhone}: "${messageToSend}"`);
+
+    res.json({
+      success: true,
+      message: `Mensagem enviada com sucesso para o WhatsApp ${cleanPhone}! Responda agora pelo seu celular para ver a IA conversando com você.`,
+      phone: cleanPhone,
+      text: messageToSend
+    });
   } catch (err) {
+    console.error('[DISPARO REAL] Erro:', err.message);
     res.status(500).json({ error: err.message });
   }
 });
