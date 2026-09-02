@@ -357,7 +357,22 @@ export async function handleSalesConversation({ phone, incomingText, senderJid, 
   }
 
   let lead = findLeadInfo(phone);
-  const existingHistory = convs[phone];
+  let existingHistory = convs[phone];
+
+  // Se veio de um LID do WhatsApp e não tem histórico direto, conecta com o último lead OUTBOUND aberto
+  if (!existingHistory && (phone.length > 13 || (senderJid && senderJid.includes('@lid')))) {
+    const recentOutboundKey = Object.keys(convs).find(k => {
+      const c = convs[k];
+      return c.flowType === 'OUTBOUND' && c.stage === 'OPENING_SENT' && (Date.now() - new Date(c.createdAt).getTime() < 30 * 60 * 1000);
+    });
+    if (recentOutboundKey) {
+      existingHistory = convs[recentOutboundKey];
+      existingHistory.lid = phone;
+      convs[phone] = existingHistory;
+      console.log(`[SALES AGENT] 🔗 Vinculando LID ${phone} ao lead Outbound: ${existingHistory.leadName} (${existingHistory.phone})`);
+    }
+  }
+
   const isOutbound = !!(lead || (name && name !== 'Empresa') || (niche && niche !== 'Geral') || existingHistory?.flowType === 'OUTBOUND');
 
   const history = existingHistory || {
