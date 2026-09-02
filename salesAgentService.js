@@ -238,41 +238,32 @@ async function handleInboundLimiroCustomer({ history, incomingText, phone, sendA
  */
 export async function handleSalesConversation({ phone, incomingText, senderJid, name, niche, city, sendReply, sendAdminAlert }) {
   const convs = loadConversations();
-  let lead = findLeadInfo(phone);
+  const lowerText = (incomingText || '').trim().toLowerCase();
 
-  // Se o telefone for um identificador LID (ex: 201443227259095), recupera o lead ativo
-  if (!lead) {
-    // Procura por qualquer lead em saved_leads ou conversa de prospecção recente
-    const allConvs = Object.values(convs);
-    const lastOutbound = allConvs.reverse().find(c => c.flowType === 'OUTBOUND' || c.leadName?.includes('Funilaria'));
-    if (lastOutbound) {
-      lead = {
-        name: lastOutbound.leadName,
-        category: lastOutbound.niche,
-        city: lastOutbound.city,
-        hasWebsite: lastOutbound.hasWebsite
-      };
-    } else {
-      // Fallback para o lead de teste padrão
-      lead = {
-        name: 'Auto Estufa & Funilaria Canedo',
-        category: 'Funilaria e Pintura Automotiva',
-        city: 'Senador Canedo, GO',
-        hasWebsite: false
-      };
+  // 🔄 Comando para resetar 100% o histórico do número e testar como cliente novo
+  if (lowerText === '!reset' || lowerText === 'reset' || lowerText === '!limiro') {
+    delete convs[phone];
+    if (senderJid) delete convs[senderJid.replace(/\D/g, '')];
+    saveConversations(convs);
+    const resetReply = "🔄 *Atendimento resetado com 100% de sucesso!*\n\nAgora envie qualquer mensagem inicial (ex: *'Olá, boa tarde'* ou *'Gostaria de um orçamento'*) para testar o atendimento de um novo cliente entrando em contato com a Limiro Brasil!";
+    if (sendReply) {
+      setTimeout(() => sendReply(resetReply).catch(() => {}), 1500);
     }
+    return { reply: resetReply, stage: 'RESET' };
   }
 
-  const isOutboundLead = true; // Todo lead contatado em prospecção ativa é Outbound
+  let lead = findLeadInfo(phone);
+
+  const isOutbound = !!(lead || name || niche || (senderJid && senderJid.includes('@lid') && Object.values(convs).some(c => c.flowType === 'OUTBOUND')));
 
   const history = convs[phone] || {
     phone,
-    flowType: 'OUTBOUND',
+    flowType: isOutbound ? 'OUTBOUND' : 'INBOUND',
     messages: [],
     stage: 'OPENING',
-    leadName: name || lead?.name || 'Auto Estufa & Funilaria Canedo',
-    niche: niche || lead?.category || 'Funilaria e Pintura Automotiva',
-    city: city || lead?.city || 'Senador Canedo, GO',
+    leadName: name || lead?.name || (isOutbound ? 'Auto Estufa & Funilaria Canedo' : null),
+    niche: niche || lead?.category || (isOutbound ? 'Funilaria e Pintura Automotiva' : null),
+    city: city || lead?.city || (isOutbound ? 'Senador Canedo, GO' : null),
     hasWebsite: lead?.hasWebsite || false,
     createdAt: new Date().toISOString()
   };
