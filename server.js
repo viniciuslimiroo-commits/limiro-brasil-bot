@@ -18,6 +18,27 @@ const PORT = process.env.PORT || 3333;
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
+
+app.get('/', (req, res) => {
+  const publicIndex = path.join(__dirname, 'public', 'index.html');
+  if (fs.existsSync(publicIndex)) {
+    return res.sendFile(publicIndex);
+  }
+  const rootIndex = path.join(__dirname, 'index.html');
+  if (fs.existsSync(rootIndex)) {
+    return res.sendFile(rootIndex);
+  }
+  res.send('<h1>Limiro Brasil Prospector & Bot Ativo</h1>');
+});
+
+app.get('/simulator', (req, res) => {
+  const simPath = path.join(__dirname, 'public', 'simulator.html');
+  if (fs.existsSync(simPath)) {
+    return res.sendFile(simPath);
+  }
+  res.sendFile(path.join(__dirname, 'simulator.html'));
+});
 
 // Garante existência da pasta de dados
 const DATA_DIR = path.join(__dirname, 'data');
@@ -451,7 +472,9 @@ app.post('/api/test/dispatch-real', async (req, res) => {
 
     let messageToSend = '';
 
-    if (flowType === 'OUTBOUND') {
+    if (customText) {
+      messageToSend = customText;
+    } else if (flowType === 'OUTBOUND') {
       messageToSend = `Opa, tudo bem? Encontrei o contato da ${businessName} aqui em ${city}, posso tirar uma dúvida rápida com vocês?`;
       
       // Registra no histórico como envio inicial de prospecção
@@ -502,6 +525,35 @@ app.post('/api/test/dispatch-real', async (req, res) => {
     });
   } catch (err) {
     console.error('[DISPARO REAL] Erro:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Endpoint direto para simulação de alerta de fechamento imediato
+app.post('/api/test/send-direct-alert', async (req, res) => {
+  const { phone } = req.body;
+  const targetPhone = phone || '5562981340443';
+  const alertText = 
+`🚨 *CLIENTE PEDIU VALORES / QUER FECHAR!*
+
+🏢 *Empresa:* Dra. Camila Vianna - Plantão 24h
+📍 *Nicho:* Clínica Odontológica em Senador Canedo, GO
+📱 *WhatsApp do Cliente:* https://wa.me/5562992421099
+💬 *Última Mensagem dele:* "Gostei muito da ideia da triagem no WhatsApp! Qual o valor do investimento para implementar aqui na nossa clínica?"
+
+📝 *Histórico do Atendimento pela IA:*
+- Nós: "Opa, tudo bem? Encontrei o contato da Dra. Camila Vianna aqui em Senador Canedo, posso tirar uma dúvida rápida?"
+- Cliente: "Pode falar, sobre o que seria?"
+- Nós: "É que a gente desenvolveu uma triagem no WhatsApp pra clínicas aqui na região que confirma consultas e reduz faltas de pacientes."
+- Cliente: "Gostei muito, qual o valor do investimento?"
+
+👉 *Chame a Dra. Camila no WhatsApp pelo link acima para fechar a venda!*`;
+
+  try {
+    const { sendWhatsAppMessage } = await import('./whatsappService.js');
+    await sendWhatsAppMessage(targetPhone, alertText);
+    res.json({ success: true, message: 'Alerta disparado!', alertText });
+  } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
